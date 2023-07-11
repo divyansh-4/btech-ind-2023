@@ -3,8 +3,9 @@ import { NextSeo } from 'next-seo';
 import { BASE_URL } from '../../utils/baseUrl';
 
 function SEO({ title, desc, imgSrc, url }) {
-  const imageSrc = imgSrc ?? '/vercel.svg'; // we need a logo svg
-  const description = desc ?? 'IIITD Induction 2023'; // we need description content
+  const logoSrc = '/favicon.io';
+  const imageSrc = imgSrc ?? logoSrc; // we need a logo svg
+  const description = desc ?? 'IIITD Induction 2023'; // we need description content, we can have separate descriptions for separate pages
   const seoTitle = title ?? 'IIITD Induction 2023';
   const seoUrl = url ?? BASE_URL;
   return (
@@ -62,11 +63,11 @@ function SEO({ title, desc, imgSrc, url }) {
       additionalLinkTags={[
         {
           rel: 'icon',
-          href: '/favicon.svg',
+          href: '/favicon.ico',
         },
         {
           rel: 'apple-touch-icon',
-          href: '/favicon.svg',
+          href: '/favicon.ico',
           sizes: '76x76',
         },
       ]}
