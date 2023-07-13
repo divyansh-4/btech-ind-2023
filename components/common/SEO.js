@@ -3,7 +3,7 @@ import { NextSeo } from 'next-seo';
 import { BASE_URL } from '../../utils/baseUrl';
 
 function SEO({ title, desc, imgSrc, url }) {
-  const logoSrc = '/favicon.io';
+  const logoSrc = '/favicon.ico';
   const imageSrc = imgSrc ?? logoSrc; // we need a logo svg
   const description = desc ?? 'IIITD Induction 2023'; // we need description content, we can have separate descriptions for separate pages
   const seoTitle = title ?? 'IIITD Induction 2023';
