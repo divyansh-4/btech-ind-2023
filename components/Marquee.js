@@ -7,7 +7,7 @@ function MarqueeComponent() {
     <div className='flex flex-col gap-2'>
       <Marquee>
         <Image
-          src='/marquee/left.png'
+          src='/marquee.png'
           width={1000}
           height={1000}
           alt={'left-marquee'}
@@ -15,7 +15,7 @@ function MarqueeComponent() {
       </Marquee>
       <Marquee direction='right'>
         <Image
-          src='/marquee/left.png'
+          src='/marquee.png'
           width={1000}
           height={1000}
           alt={'left-marquee'}
