@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 function Footer() {
@@ -19,9 +20,9 @@ function Footer() {
     <div className='w-full bottom-0 absolute bg-black px-10 py-5 flex justify-between text-red-600 h-36'>
       <div className='flex flex-col gap-2'>
         <div className='flex items-center gap-2'>
-          <img src='/logo.svg' alt='IIITD Logo' className='h-10' />
+          <Image width={75} height={75} src='/logo.svg' alt='IIITD Logo' />
           <div className='w-1 h-10 bg-red-600'></div>
-          <p className='uppercase'>
+          <p className='uppercase font-bold'>
             indraprashta insitute of information technology, delhi
           </p>
         </div>
@@ -34,7 +35,7 @@ function Footer() {
         {infoList.map((item) => {
           return (
             <div key={item.title} className='flex items-center gap-2'>
-              <p>{item.title}</p>
+              <p className='font-bold'>{item.title}</p>
               {item.content}
             </div>
           );
