@@ -39,7 +39,7 @@ function Footer() {
     []
   );
   return (
-    <div className='w-full bottom-0 absolute bg-black px-10 py-8 flex flex-col md:flex-row justify-between text-red-600 gap-5'>
+    <div className='w-full bottom-0 absolute bg-black p-8 sm:p-10 flex flex-col md:flex-row justify-between text-red-600 gap-5'>
       <div className='flex flex-col gap-2'>
         <div className='flex items-center gap-2'>
           <Image width={75} height={75} src='/logo.svg' alt='IIITD Logo' />
