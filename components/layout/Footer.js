@@ -39,11 +39,11 @@ function Footer() {
     []
   );
   return (
-    <div className='w-full bottom-0 absolute bg-black p-8 sm:p-10 flex flex-col md:flex-row justify-between text-red-600 gap-5'>
+    <div className='w-full bottom-0 absolute bg-[#252525] p-8 sm:p-10 flex flex-col md:flex-row justify-between text-red gap-5'>
       <div className='flex flex-col gap-2'>
         <div className='flex items-center gap-2'>
           <Image width={75} height={75} src='/logo.svg' alt='IIITD Logo' />
-          <div className='w-1 h-10 bg-red-600'></div>
+          <div className='w-1 h-10 bg-red'></div>
           <p className='uppercase font-bold text-sm sm:text-md md:text-lg'>
             indraprashta insitute of information technology, delhi
           </p>
