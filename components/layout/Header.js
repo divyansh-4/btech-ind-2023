@@ -3,13 +3,11 @@ import Image from 'next/image';
 import React, { useMemo } from 'react';
 
 function Header() {
-  const iconStyle = useMemo(() => 'w-4 md:w-5 lg:w-8', []);
+  const iconStyle = useMemo(() => 'w-4 md:w-5 lg:w-6', []);
   return (
     <div className='w-full bg-red sticky'>
       <div className='flex items-center justify-between py-2 px-5 md:px-5 lg:px-10'>
-        <div>
-          <Menu className={`text-white text-2xl md:text-4xl lg:text-5xl`} />
-        </div>
+        <Menu className={`text-white text-2xl md:text-3xl lg:text-4xl`} />
         <Image
           width={125}
           height={125}
