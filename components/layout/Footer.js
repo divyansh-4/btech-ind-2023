@@ -10,7 +10,7 @@ function Footer() {
       {
         title: 'Phone',
         content: (
-          <p className='text-xs sm:text-sm md:text-md'>
+          <p className='text-xs md:text-sm lg:text-md'>
             +91-011-71985300, +91-011-26907400-7404
           </p>
         ),
@@ -20,7 +20,7 @@ function Footer() {
         title: 'Mail',
         content: (
           <a
-            className='hover:underline text-xs sm:text-sm md:text-md'
+            className='hover:underline text-xs md:text-sm lg:text-md'
             href='mailto:enveave@iiitd.ac.in'
           >
             info@iiitd.ac.in
@@ -31,7 +31,7 @@ function Footer() {
       {
         title: 'Fax',
         content: (
-          <p className='text-xs sm:text-sm md:text-md'>+91-11-26907405</p>
+          <p className='text-xs md:text-sm lg:text-md'>+91-11-26907405</p>
         ),
         icon: <FaxIcon />,
       },
@@ -39,16 +39,16 @@ function Footer() {
     []
   );
   return (
-    <div className='w-full bottom-0 absolute bg-[#252525] p-8 sm:p-10 flex flex-col md:flex-row justify-between text-red gap-5'>
+    <div className='w-full bottom-0 absolute bg-[#252525] p-4 sm:p-8 md:p-10 flex flex-col md:flex-row justify-between text-red gap-5'>
       <div className='flex flex-col gap-2'>
         <div className='flex items-center gap-2'>
           <Image width={75} height={75} src='/logo.svg' alt='IIITD Logo' />
           <div className='w-1 h-10 bg-red'></div>
-          <p className='uppercase font-bold text-sm sm:text-md md:text-lg'>
+          <p className='uppercase font-bold text-xs sm:text-sm md:text-md lg:text-lg'>
             indraprashta insitute of information technology, delhi
           </p>
         </div>
-        <p className='text-sm sm:text-md md:text-lg'>
+        <p className='text-xs sm:text-sm md:text-md lg:text-lg'>
           Okhla Industrial Area Phase 3, Near Govindpuri Metro Station <br />
           New Delhi, Delhi, 110020
         </p>
@@ -62,7 +62,9 @@ function Footer() {
             >
               <div className='flex items-center gap-2'>
                 {item.icon}
-                <p className='font-bold text-sm md:text-md'>{item.title}</p>
+                <p className='font-bold text-xs md:text-sm lg:text-md'>
+                  {item.title}
+                </p>
               </div>
               {item.content}
             </div>
