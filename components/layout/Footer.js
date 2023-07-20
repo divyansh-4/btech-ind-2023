@@ -5,12 +5,13 @@ import EmailIcon from '@mui/icons-material/Email';
 import { Phone } from '@mui/icons-material';
 
 function Footer() {
+  const infoListTextStyle = useMemo(() => 'text-xs md:text-sm lg:text-md', []);
   const infoList = useMemo(
     () => [
       {
         title: 'Phone',
         content: (
-          <p className='text-xs md:text-sm lg:text-md'>
+          <p className={infoListTextStyle}>
             +91-011-71985300, +91-011-26907400-7404
           </p>
         ),
@@ -20,7 +21,7 @@ function Footer() {
         title: 'Mail',
         content: (
           <a
-            className='hover:underline text-xs md:text-sm lg:text-md'
+            className={`hover:underline ${infoListTextStyle}`}
             href='mailto:enveave@iiitd.ac.in'
           >
             info@iiitd.ac.in
@@ -30,13 +31,11 @@ function Footer() {
       },
       {
         title: 'Fax',
-        content: (
-          <p className='text-xs md:text-sm lg:text-md'>+91-11-26907405</p>
-        ),
+        content: <p className={infoListTextStyle}>+91-11-26907405</p>,
         icon: <FaxIcon />,
       },
     ],
-    []
+    [infoListTextStyle]
   );
   return (
     <div className='w-full bottom-0 absolute bg-[#252525] p-4 sm:p-8 md:p-10 flex flex-col md:flex-row justify-between text-red gap-5'>
