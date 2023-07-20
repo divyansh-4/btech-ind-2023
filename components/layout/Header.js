@@ -3,12 +3,12 @@ import Image from 'next/image';
 import React, { useMemo } from 'react';
 
 function Header() {
-  const iconStyle = useMemo(() => 'w-4 md:w-5 lg:w-7', []);
+  const iconStyle = useMemo(() => 'w-4 md:w-5 lg:w-8', []);
   return (
     <div className='w-full bg-red sticky'>
       <div className='flex items-center justify-between py-2 px-5 md:px-5 lg:px-10'>
         <div>
-          <Menu className={`text-white ${iconStyle}`} />
+          <Menu className={`text-white text-2xl md:text-4xl lg:text-5xl`} />
         </div>
         <Image
           width={125}
@@ -17,7 +17,7 @@ function Header() {
           alt='IIITD Logo'
           className='w-20 sm:w-24 md:w-28 lg:w-32'
         />
-        <div className='flex items-center gap-3 sm:gap-5'>
+        <div className='flex items-center gap-3 sm:gap-5 md:gap-8 lg:gap-10'>
           <Image
             width={25}
             height={25}
