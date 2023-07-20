@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React, { useMemo } from 'react';
 
 function Header() {
-  const iconStyle = useMemo(() => 'w-4 md:w-5 lg:w-6', []);
+  const iconStyle = useMemo(() => 'w-4 sm:w-5 md:w-6 lg:w-7', []);
   return (
     <div className='w-full bg-red sticky'>
       <div className='flex items-center justify-between py-2 px-5 md:px-5 lg:px-10'>
