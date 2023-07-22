@@ -1,0 +1,26 @@
+
+.gallerycontainer {
+    height : 34em;
+    width : 45em;
+    display : flex ;
+    margin : auto ;
+    gap : 4px ;
+   transition: all 2s ease-in ;
+   border-width: 0;
+  }
+  
+  .gallerycontainer > div {
+    background-repeat : no-repeat ;
+    background-size : auto 100% ;
+    background-position : center;
+    border-radius : 0.9em;
+    border-width: 0;
+    flex : 1;
+    transition : all 1s ease;
+  }
+  
+  .gallerycontainer > div:hover {
+    flex :4
+  }
+  
+  
