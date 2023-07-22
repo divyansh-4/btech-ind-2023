@@ -17,7 +17,7 @@ export default function WelcomeCard() {
             </div>
           </div>
         </div>
-        <div className='w-full xl:w-11/12 text-yellow mt-20 text-center sm:text-left'>
+        <div className='w-full xl:w-11/12 text-yellow mt-10 sm:mt-16 md:mt-20 text-center sm:text-left'>
           Indraprastha Institute of Information Technology Delhi (IIIT-Delhi)
           was created by an act of Delhi legislature empowering it to carry out
           R&D, conduct educational programs, and grant degrees. The General
