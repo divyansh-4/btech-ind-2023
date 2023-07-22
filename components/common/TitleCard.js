@@ -1,47 +1,38 @@
-export default function TitleCard({ title, subtext, graphic }) {
+export default function TitleCard({
+  title,
+  subtitle,
+  subtext,
+  graphic,
+  variant = 1,
+}) {
   return (
     <div>
       <div
-        className="relative"
+        className={`relative bg-[#252525] pl-[1.5rem] pr-[5rem] pt-[1.5rem] pb-[${
+          variant === 1 ? "3rem" : "5rem"
+        }] rounded-2xl`}
         style={{
-          backgroundColor: "#252525",
-          padding: "28px 90px 28px 28px",
-          borderRadius: "18px",
-          boxShadow:
-            "0 4px 4px 0 rgba(0,0,0,0.25), 18px 20px 0 0 #FAC018, 19px 21px 0 0 black, 19px 19px 0 0 black, 17px 21px 0 0 black",
+          boxShadow: `0 4px 4px 0 rgba(0,0,0,0.25), 18px 20px 0 0 ${
+            variant === 1 ? "#FAC018" : "#E44F44"
+          }, 19px 21px 0 0 black, 19px 19px 0 0 black, 17px 21px 0 0 black`,
+          paddingBottom: variant === 1 ? "3rem" : "5rem",
         }}
       >
         <div
+          className="bg-[#FAC018] rounded-2xl py-0.5 px-2 w-fit text-lg sm:text-xl font-bold"
           style={{
-            backgroundColor: "#FAC018",
-            borderRadius: "20px",
-            padding: "8px",
-            width: "fit-content",
             textShadow: "0 3px 4px rgba(0,0,0,0.25)",
-            fontSize: "1.3rem",
-            lineHeight: "1.3rem",
-            fontWeight: "700",
           }}
         >
-          AUGUST 2 - 6
+          {subtext}
         </div>
-        <div
-          style={{
-            fontSize: "3rem",
-            color: "#E44F44",
-            fontWeight: "700",
-            lineHeight: "3.4rem",
-            marginTop: "32px",
-          }}
-        >
-          INDUCTION <br></br>BTECH
+        <div className="text-3xl sm:text-5xl text-[#E44F44] font-bold mt-6">
+          {title}
         </div>
-        <div
-          className="absolute -bottom-10 -right-5"
-          style={{
-            overflow: "visible",
-          }}
-        >
+        {variant !== 1 ? (
+          <div className="text-7xl text-[#E44F44] font-bold">{subtitle}</div>
+        ) : null}
+        <div className="absolute -bottom-10 -right-5 overflow-visible w-1/2 h-1/2">
           {graphic}
         </div>
       </div>
