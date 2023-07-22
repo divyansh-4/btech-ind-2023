@@ -7,7 +7,7 @@ export default function TitleCard({
 }) {
   return (
     <div
-      className={`relative bg-background pl-5 pr-20 pt-6 rounded-2xl ${
+      className={`relative bg-background pl-4 sm:pl-8 pr-20 pt-4 sm:pt-6 rounded-2xl ${
         variant === 1 ? 'pb-12' : 'pb-20'
       }`}
       style={{
@@ -18,14 +18,14 @@ export default function TitleCard({
       }}
     >
       <div
-        className='bg-yellow rounded-2xl p-4 w-fit text-xl sm:text-5xl font-bold'
+        className='bg-yellow rounded-2xl p-2 md:p-4 w-fit text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold'
         style={{
           textShadow: '0 3px 4px rgba(0,0,0,0.25)',
         }}
       >
         {subtext}
       </div>
-      <div className='text-6xl sm:text-8xl md:text-9xl text-red font-bold mt-6'>
+      <div className='text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-red font-bold mt-6'>
         {title}
       </div>
       {variant !== 1 && (
