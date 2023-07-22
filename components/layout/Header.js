@@ -1,5 +1,6 @@
 import { Menu } from "@mui/icons-material";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useMemo } from "react";
 
 function Header() {
@@ -16,6 +17,8 @@ function Header() {
           className="w-20 sm:w-24 md:w-28 lg:w-32"
         />
         <div className="flex items-center gap-3 sm:gap-5 md:gap-8 lg:gap-10">
+        <Link href="/">Home</Link> {/* Existing link */}
+          <Link href="/schedule">Schedule</Link> {/* New link for /schedule */}
           <Image
             width={25}
             height={25}
