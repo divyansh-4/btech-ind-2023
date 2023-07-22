@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function WelcomeCard() {
   return (
-    <div className='bg-[#252525] rounded-xl md:p-[3rem] p-[2rem] w-11/12 sm:max-w-[70%] xl:pr-[30%] relative'>
+    <div className='bg-[#252525] rounded-xl p-5 sm:p-10 w-11/12 sm:max-w-[70%] xl:pr-[30%] relative'>
       <div className='max-w-full xl:max-w-[80%]'>
         <div className='text-6xl md:text-7xl lg:text-8xl relative text-red font-bold leading-none w-fit'>
           WELCOME<br></br>TO
