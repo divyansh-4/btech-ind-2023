@@ -20,11 +20,10 @@ export default function Home() {
               >
                 <div
                   className='bg-repeat-y bg-cover md:bg-[length:100%]   w-full h-full bg-top'
-                  // className='bg-top bg-repeat-y bg-top bg-[length:100%] w-full h-full'
                   style={{
                     backgroundImage: "url('/stickerwall.png')",
                   }}
-                ></div>
+                />
               </Parallax>
               <div className='flex justify-center items-center h-screen'>
                 <TitleCard
