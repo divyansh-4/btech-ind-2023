@@ -14,56 +14,60 @@ function Gallery() {
 
   const startIndex = 0;
   const endIndex = images.length;
-  const galleryBackground = '/gallery-bg.png';
 
   return (
-    <div
-      className='bg-[#DF392E] bg-cover bg-center min-h-screen'
-      style={{ backgroundImage: `url(${galleryBackground})` }}
-    >
-      <div className='justify-center items-center p-12'>
-        <Carousel>
-          <Carousel.Item>
-            <div className={gallery.gallerycontainer}>
-              {images.slice(startIndex, endIndex).map((imageUrl, index) => (
-                <div key={imageUrl} className='rounded-lg overflow-hidden'>
-                  <img
-                    src={imageUrl}
-                    alt={`Image ${index + 1}`}
-                    className='w-full h-full object-cover '
-                  />
-                </div>
-              ))}
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className={gallery.gallerycontainer}>
-              {images.slice(startIndex, endIndex).map((imageUrl, index) => (
-                <div key={imageUrl} className='rounded-lg overflow-hidden '>
-                  <img
-                    src={imageUrl}
-                    alt={`Image ${index + 1}`}
-                    className='w-full h-full object-cover '
-                  />
-                </div>
-              ))}
-            </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className={gallery.gallerycontainer}>
-              {images.slice(startIndex, endIndex).map((imageUrl, index) => (
-                <div key={imageUrl} className='rounded-lg overflow-hidden '>
-                  <img
-                    src={imageUrl}
-                    alt={`Image ${index + 1}`}
-                    className='w-full h-full object-cover '
-                  />
-                </div>
-              ))}
-            </div>
-          </Carousel.Item>
-        </Carousel>
+    <div className='flex flex-col gap-10 justify-center items-center p-12'>
+      <div className='uppercase bg-amber-400 rounded-[40px] text-center sm:rounded-[10rem] border-2 border-black w-[60%] sm:w-[55%] lg:w-[50%] p-4 '>
+        <p
+          className='text-neutral-800 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tighter uppercase'
+          style={{
+            textShadow: '0 6px 8px rgba(0,0,0,0.25)',
+          }}
+        >
+          gallery
+        </p>
       </div>
+      <Carousel>
+        <Carousel.Item>
+          <div className={gallery.gallerycontainer}>
+            {images.slice(startIndex, endIndex).map((imageUrl, index) => (
+              <div key={imageUrl} className='rounded-lg overflow-hidden'>
+                <img
+                  src={imageUrl}
+                  alt={`Image ${index + 1}`}
+                  className='w-full h-full object-cover'
+                />
+              </div>
+            ))}
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className={gallery.gallerycontainer}>
+            {images.slice(startIndex, endIndex).map((imageUrl, index) => (
+              <div key={imageUrl} className='rounded-lg overflow-hidden '>
+                <img
+                  src={imageUrl}
+                  alt={`Image ${index + 1}`}
+                  className='w-full h-full object-cover '
+                />
+              </div>
+            ))}
+          </div>
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className={gallery.gallerycontainer}>
+            {images.slice(startIndex, endIndex).map((imageUrl, index) => (
+              <div key={imageUrl} className='rounded-lg overflow-hidden '>
+                <img
+                  src={imageUrl}
+                  alt={`Image ${index + 1}`}
+                  className='w-full h-full object-cover '
+                />
+              </div>
+            ))}
+          </div>
+        </Carousel.Item>
+      </Carousel>
     </div>
   );
 }

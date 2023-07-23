@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 export default function Parallax({
   children,
-  className = "",
+  className = '',
   style = {},
   factor = 5,
 }) {
@@ -13,10 +13,10 @@ export default function Parallax({
       setOffset(window.scrollY / factor);
     }
 
-    window.addEventListener("scroll", ScrollListener);
+    window.addEventListener('scroll', ScrollListener);
 
     return () => {
-      window.removeEventListener("scroll", ScrollListener);
+      window.removeEventListener('scroll', ScrollListener);
     };
   }, []);
 
