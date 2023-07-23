@@ -1,7 +1,6 @@
-import Image from 'next/image';
-import Header from './Header';
-import Gallery from './Gallery';
-import Footer from './Footer';
+import Image from "next/image";
+import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Body({ firstSection, secondSection, thirdSection }) {
   const ripHeight1 = 8;
@@ -36,15 +35,15 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
           style={{ height: `${ripHeight1}rem` }}
         >
           <Image
-            src='/background_filters/ripped1.svg'
+            src="/background_filters/ripped1.svg"
             fill={true}
-            alt='rip'
-            className='object-cover object-center'
+            alt="rip"
+            className="object-cover object-center"
           />
         </div>
       </div>
       <div
-        className='bg-[#32BD6C] relative z-[1] bg-bottom bg-cover bg-no-repeat'
+        className="bg-[#32BD6C] relative z-[1] bg-bottom bg-cover bg-no-repeat"
         style={{
           top: `-${ripHeight1 / 1.5}rem`,
           clipPath: `polygon(${clipPathTop}, ${clipPathBottom})`,
@@ -56,7 +55,7 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
       </div>
       {thirdSection && (
         <div
-          className='bg-[#DF392E] relative bg-bottom bg-cover bg-no-repeat'
+          className="bg-[#DF392E] relative bg-bottom bg-cover bg-no-repeat"
           style={{
             top: `-${ripHeight1 / 1.5 + ripHeight2 / 1.5}rem`,
             backgroundImage: "url('/background_filters/section3.png')",
@@ -64,25 +63,24 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
           }}
         >
           <>
-            <Gallery />
             <div
-              className='absolute w-full top-0 z-[3]'
+              className="absolute w-full top-0 z-[3]"
               style={{
                 height: `${ripHeight2}rem`,
               }}
             >
               <Image
-                src='/background_filters/ripped2.svg'
+                src="/background_filters/ripped2.svg"
                 fill={true}
-                alt='rip'
-                className='object-cover object-center'
+                alt="rip"
+                className="object-cover object-center"
               />
             </div>
             {thirdSection}
           </>
         </div>
       )}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
