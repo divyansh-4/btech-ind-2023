@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import SEO from '../components/common/SEO';
-import Body from '../components/layout/Bodys';
 import Parallax from '../components/common/Parallax';
 import RoadMap from '../components/svg/svg1'; // Make sure this import points to the correct path
 import TitleCard from '../components/common/TitleCard';
+import Body from '../components/layout/Body';
 
 const SchedulePage = () => {
   const [activeRoadmap, setActiveRoadmap] = useState('/path.svg'); // Set the default active roadmap here
