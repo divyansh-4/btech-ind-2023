@@ -17,7 +17,7 @@ export default function KeynoteSec() {
           </p>
         </div>
         <div
-          className='max-w-[55%] mt-4 h-fit sm:mt-12  flex  justify-center items-center text-center mx-auto text-neutral-800 px-4 sm:px-[10%] text-[1.4vh] sm:text-[22px] md:text-[26px] lg:text-[32px]  font-medium'
+          className='max-w-[55%] mt-4 h-fit sm:mt-12 flex justify-center items-center text-center mx-auto text-neutral-800 px-4 sm:px-[10%] text-[1.4vh] sm:text-xl md:text-2xl lg:text-3xl font-medium'
           style={{
             backgroundImage: "url('/redTornPaper.png')",
             backgroundRepeat: 'no-repeat',
