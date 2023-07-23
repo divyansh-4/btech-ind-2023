@@ -2,6 +2,7 @@ import { Menu, Close } from '@mui/icons-material';
 import Image from 'next/image';
 import React, { useMemo, useState, useRef, useEffect } from 'react';
 import MenuComponent from '../common/Menu';
+import Link from 'next/link';
 
 function Header() {
   const iconStyle = useMemo(() => 'w-4 sm:w-5 md:w-6 lg:w-7', []);
