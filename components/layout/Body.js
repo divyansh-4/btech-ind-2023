@@ -64,7 +64,7 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
           }}
         >
           <>
-            {/* <Gallery /> */}
+            <Gallery />
             <div
               className="absolute w-full top-0 z-[3]"
               style={{
