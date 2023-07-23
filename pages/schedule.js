@@ -58,7 +58,7 @@ const SchedulePage = () => {
             </div>
           </>
         }
-        thirdSection={
+        secondSection={
           <div>
             <div className="flex justify-center items-start h-30">
               {/* Add buttons in the second section */}
