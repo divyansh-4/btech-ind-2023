@@ -4,7 +4,7 @@ import SEO from '../components/common/SEO';
 import Body from '../components/layout/Body';
 import Image from 'next/image';
 import Parallax from '../components/common/Parallax';
-import KeynoteSec from '../components/Keynotesec';
+import KeynoteSec from '../components/KeynoteSec';
 
 export default function Home() {
   return (
