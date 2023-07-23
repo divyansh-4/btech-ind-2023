@@ -33,11 +33,11 @@ function Footer() {
         content: (
           <p className={infoListTextStyle}>
             <a
-            className={'hover:underline text-red no-underline'}
-            href='mailto:enveave@iiitd.ac.in'
-          >
-            info@iiitd.ac.in
-          </a>
+              className={'hover:underline text-red no-underline'}
+              href='mailto:enveave@iiitd.ac.in'
+            >
+              info@iiitd.ac.in
+            </a>
           </p>
         ),
         icon: <EmailIcon />,
@@ -62,10 +62,11 @@ function Footer() {
         </div>
         <div data-inview-text-shuffle>
           <div data-text-shuffle>
-          <p className='text-xs sm:text-sm md:text-md lg:text-lg'>
-          Okhla Industrial Area Phase 3, Near Govindpuri Metro Station <br />
-          New Delhi, Delhi, 110020
-          </p>
+            <p className='text-xs sm:text-sm md:text-md lg:text-lg'>
+              Okhla Industrial Area Phase 3, Near Govindpuri Metro Station{' '}
+              <br />
+              New Delhi, Delhi, 110020
+            </p>
           </div>
         </div>
       </div>
@@ -83,9 +84,7 @@ function Footer() {
                 </p>
               </div>
               <div data-inview-text-shuffle>
-                <div data-text-shuffle>
-                {item.content}
-                </div>
+                <div data-text-shuffle>{item.content}</div>
               </div>
             </div>
           );

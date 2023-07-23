@@ -33,7 +33,7 @@ const SchedulePage = () => {
               </Parallax>
               <div className='flex justify-center items-center h-screen'>
                 <TitleCard
-                  graphic1={
+                  graphic={
                     <Image
                       className='mx-20 my-1 object-contain object-bottom-right'
                       src='/2023_red.svg'
@@ -43,33 +43,22 @@ const SchedulePage = () => {
                   }
                   graphic2={
                     <Image
-                      className='my-40 object-contain object-bottom-left'
+                      className='object-contain object-bottom-left'
                       src='/jptr.svg'
-                      alt='2023'
+                      alt='jupiter'
                       fill={true}
                     />
                   }
-                  title={
-                    <span>
-                      <span className='block text-4xl md:text-6xl'>
-                        BTECH INDUCTION
-                      </span>
-                      <span className='block text-10xl md:text-12xl'>
-                        SCHEDULE
-                      </span>
-                      <span>
-                        <br />
-                      </span>
-                    </span>
-                  }
+                  title='BTECH INDUCTION'
+                  subtitle='SCHEDULE'
                   subtext='AUGUST 2 - 6'
-                  variant={1}
+                  variant={2}
                 />
               </div>
             </div>
           </>
         }
-        thirdSection={
+        secondSection={
           <div>
             <div className='flex justify-center items-start h-30'>
               {/* Add buttons in the second section */}
