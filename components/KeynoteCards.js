@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function KeynoteCards({ name, desc, image, color }) {
   return (
     <div className='w-[87%] relative mx-auto'>
