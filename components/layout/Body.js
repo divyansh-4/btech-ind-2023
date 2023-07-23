@@ -80,7 +80,7 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
           </>
         </div>
       )}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
