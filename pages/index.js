@@ -58,7 +58,6 @@ export default function Home() {
                 factor={4}
               >
                 <div
-                  // className="bg-cover md:bg-[length:100%]  w-full h-full bg-top  bg-repeat-y "
                   className='bg-top bg-repeat-y bg-[length:100%] w-full h-full'
                   style={{
                     backgroundImage: "url('/stickerforkeynote.png') ",
