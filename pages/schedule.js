@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import Image from 'next/image';
 import SEO from '../components/common/SEO';
 import Parallax from '../components/common/Parallax';
@@ -9,9 +9,9 @@ import Body from '../components/layout/Body';
 const SchedulePage = () => {
   const [activeRoadmap, setActiveRoadmap] = useState('/schedule/path1.svg'); // Set the default active roadmap here
 
-  const handleButtonClick = (roadmapImage) => {
+  const handleButtonClick = useCallback((roadmapImage) => {
     setActiveRoadmap(roadmapImage);
-  };
+  }, []);
 
   return (
     <>
