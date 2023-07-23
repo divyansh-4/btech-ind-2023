@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Header from './Header';
+import Gallery from './Gallery';
 import Footer from './Footer';
 
 export default function Body({ firstSection, secondSection, thirdSection }) {
@@ -63,6 +64,7 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
           }}
         >
           <>
+          <Gallery />
             <div
               className='absolute w-full top-0 z-[3]'
               style={{
