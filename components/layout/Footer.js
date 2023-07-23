@@ -7,7 +7,7 @@ import { Phone } from '@mui/icons-material';
 function Footer() {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://brandingthatslaps.com/wp-content/themes/slaps/dist/js/main.js';
+    // script.src = 'https://brandingthatslaps.com/wp-content/themes/slaps/dist/js/main.js';
     script.async = true;
     document.body.appendChild(script);
 

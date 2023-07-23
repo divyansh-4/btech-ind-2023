@@ -7,7 +7,7 @@ import TitleCard from '../components/common/TitleCard';
 import Body from '../components/layout/Body';
 
 const SchedulePage = () => {
-  const [activeRoadmap, setActiveRoadmap] = useState('/path.svg'); // Set the default active roadmap here
+  const [activeRoadmap, setActiveRoadmap] = useState('/schedule/path1.svg'); // Set the default active roadmap here
 
   const handleButtonClick = (roadmapImage) => {
     setActiveRoadmap(roadmapImage);
@@ -51,11 +51,11 @@ const SchedulePage = () => {
                   }
                   title={
                     <span>
-                      <span className='block text-5xl md:text-8xl'>
-                        Btech Induction
+                      <span className='block text-4xl md:text-6xl'>
+                        BTECH INDUCTION
                       </span>
-                      <span className='block text-9xl md:text-10xl'>
-                        Schedule
+                      <span className='block text-10xl md:text-12xl'>
+                        SCHEDULE
                       </span>
                       <span>
                         <br />
@@ -75,31 +75,31 @@ const SchedulePage = () => {
               {/* Add buttons in the second section */}
               <button
                 className=' px-20 py-20 bg-yellow-500 rounded text-white'
-                onClick={() => handleButtonClick('/path.svg')}
+                onClick={() => handleButtonClick('/schedule/path1.svg')}
               >
                 Day 1
               </button>
               <button
                 className=' px-20 py-20 bg-yellow-500 rounded text-white'
-                onClick={() => handleButtonClick('/day2.svg')}
+                onClick={() => handleButtonClick('/schedule/path2.svg')}
               >
                 Day 2
               </button>
               <button
                 className=' px-20 py-20 bg-yellow-500 rounded text-white'
-                onClick={() => handleButtonClick('/day3.svg')}
+                onClick={() => handleButtonClick('/schedule/path3.svg')}
               >
                 Day 3
               </button>
               <button
                 className=' px-20 py-20 bg-yellow-500 rounded text-white'
-                onClick={() => handleButtonClick('/day4.svg')}
+                onClick={() => handleButtonClick('/schedule/path4.svg')}
               >
                 Day 4
               </button>
               <button
                 className=' px-20 py-20 bg-yellow-500 rounded text-white'
-                onClick={() => handleButtonClick('/day5.svg')}
+                onClick={() => handleButtonClick('/schedule/path5.svg')}
               >
                 Day 5
               </button>
