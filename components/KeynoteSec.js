@@ -6,7 +6,7 @@ export default function KeynoteSec() {
       <div className='flex flex-col justify-center items-center w-full my-8 sm:my-16 h-fit'>
         <div className='uppercase bg-amber-400 rounded-[40px] text-center sm:rounded-[100px] border-2 border-black w-[60%] sm:w-[55%] lg:w-[50%] p-4 '>
           <p
-            className='text-neutral-800 text-[35px] sm:text-[50px] md:text-[70px] lg:text-[90px] font-bold leading-[1.1] tracking-tighter'
+            className='text-neutral-800 text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tighter uppercase'
             style={{
               textShadow: '0 6px 8px rgba(0,0,0,0.25)',
             }}
@@ -32,7 +32,7 @@ export default function KeynoteSec() {
         </div>
       </div>
       <div className='w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-20 my-4 sm:my-4 mx-auto'>
-        {Array.from({ length: 10 }).map((keynote) => {
+        {Array.from({ length: 9 }).map((keynote) => {
           return (
             <KeynoteCards
               key={keynote}
