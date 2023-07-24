@@ -10,8 +10,7 @@ export default function Parallax({
 
   useEffect(() => {
     function ScrollListener() {
-      setOffset((window.scrollY / factor));
-      console.log(window.scrollY, "scroll");
+      setOffset(window.scrollY / factor);
     }
 
     window.addEventListener("scroll", ScrollListener);
