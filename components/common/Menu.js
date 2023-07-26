@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function UnderLineText({ text }) {
   return (
@@ -29,11 +30,13 @@ export default function Menu() {
 
       <div className="flex items-center">
         <div className={`${menuItem}`}>
-          <Image
-            alt="schedule"
-            src="/menu/schedule.png"
-            {...scheduleResolution}
-          />
+          <Link href="/schedule">
+            <Image
+              alt="schedule"
+              src="/menu/schedule.png"
+              {...scheduleResolution}
+            />
+          </Link>
         </div>
         <div className={`${menuItem} relative`} style={{ top: `${offset}px` }}>
           <Image alt="gallery" src="/menu/gallery.png" {...galleryResolution} />
