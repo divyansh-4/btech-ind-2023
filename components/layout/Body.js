@@ -61,7 +61,10 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
             clipPath: `polygon(${clipPathTop}, ${clipPathBottom})`,
             backgroundImage: "url('/background_filters/section2.png')",
             paddingTop: `${ripHeight / 1.5}px`,
+<<<<<<< HEAD
             paddingBottom: `${ripHeight}px`,
+=======
+>>>>>>> main
           }}
         >
           {secondSection}
@@ -70,7 +73,11 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
           <div
             className="bg-[#DF392E] relative bg-bottom bg-cover bg-no-repeat"
             style={{
+<<<<<<< HEAD
               top: `-${ripHeight}px`,
+=======
+              top: `-${ripHeight + 36}px`,
+>>>>>>> main
               backgroundImage: "url('/background_filters/section3.png')",
               paddingTop: `${ripHeight / 3}px`,
             }}
