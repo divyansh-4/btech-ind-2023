@@ -38,11 +38,11 @@ a {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--black);
+  background: var(--theme);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--theme);
+  background: var(--black);
   border-radius: 1rem;
 }
