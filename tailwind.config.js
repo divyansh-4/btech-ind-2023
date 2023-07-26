@@ -12,7 +12,7 @@ module.exports = {
         yellow: '#FAC018',
         background: '#252525',
         blue5:'#277FE6',
-        purple9:'#4D2885'
+        purple9:'#4D2885',
       }, 
     },
   },

@@ -1,4 +1,4 @@
-export default function KeynoteCards({ name, desc, image, color }) {
+export default function KeynoteCards({ name, desc, image, color, height }) {
   return (
     <div className='w-[87%] relative mx-auto'>
       <div className=' h-[35vh]  md:h-[40vh]  lg:h-[50vh] bg-neutral-800 rounded-[30px] relative z-20  pt-1 md:pt-3 lg:pt-4'>
@@ -14,11 +14,12 @@ export default function KeynoteCards({ name, desc, image, color }) {
         </div>
         <div className='text-right text-amber-400 font-normal text-[14px] leading-[3.5vh] md:text-[18px] lg:text-[20px] 2xl:text-3xl lg:leading-10 2xl:leading-[44px] absolute right-6 w-[40%] lg:w-[55%] mt-2'>
           {desc}
+
         </div>
-        <img src={image} className='absolute bottom-0 left-0 h-[90%]' />
+        <img src={image} className={`absolute bottom-0 left-0 ${height}`} />
       </div>
       <div
-        className={`w-full h-[35vh]  md:h-[40vh] lg:h-[50vh] border-2 border-neutral-800 rounded-[30px] absolute top-6 left-6 bg-${color} z-10`}
+        className={`w-full h-[35vh]  md:h-[40vh] lg:h-[50vh] border-2 border-neutral-800 rounded-[30px] absolute top-6 left-6 ${color} z-10`}
       ></div>
     </div>
   );
