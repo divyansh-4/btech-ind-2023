@@ -23,7 +23,10 @@ export default function Parallax({
   return (
     <div
       className={className}
-      style={{ ...style, transform: `translateY(${offset}px)` }}
+      style={{
+        ...style,
+        transform: `translate3d(0, ${offset}px, 0)`,
+      }}
     >
       {children}
     </div>

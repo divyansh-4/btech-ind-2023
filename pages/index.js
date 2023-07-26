@@ -4,6 +4,7 @@ import SEO from "../components/common/SEO";
 import Body from "../components/layout/Body";
 import Image from "next/image";
 import Parallax from "../components/common/Parallax";
+import Menu from "../components/common/Menu";
 import KeynoteSec from "../components/KeynoteSec";
 import Gallery from "../components/layout/Gallery";
 
