@@ -61,6 +61,7 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
             clipPath: `polygon(${clipPathTop}, ${clipPathBottom})`,
             backgroundImage: "url('/background_filters/section2.png')",
             paddingTop: `${ripHeight / 1.5}px`,
+            paddingBottom: `${ripHeight}px`,
           }}
         >
           {secondSection}
@@ -69,7 +70,7 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
           <div
             className="bg-[#DF392E] relative bg-bottom bg-cover bg-no-repeat"
             style={{
-              top: `-${ripHeight + 36}px`,
+              top: `-${ripHeight}px`,
               backgroundImage: "url('/background_filters/section3.png')",
               paddingTop: `${ripHeight / 3}px`,
             }}
@@ -92,8 +93,8 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
           </div>
         )}
         <div
-          className={`absolute w-full bg-background`}
-          style={{ height: `${ripHeight + 36}px`, bottom: `0` }}
+          className={`absolute w-full bg-background z-[5]`}
+          style={{ height: `${ripHeight}px`, bottom: `0` }}
         ></div>
       </div>
       <Footer />
