@@ -1,14 +1,12 @@
 import KeynoteCards from './KeynoteCards';
 
 export default function KeynoteSec() {
-  
   return (
     <div className='h-fit relative'>
       <div className='flex flex-col justify-center items-center w-full my-8 sm:my-16 h-fit'>
-        {/* <div className='uppercase bg-amber-400 rounded-[40px] text-center sm:rounded-[100px] border-2 border-black w-fit p-4 '> */}
-        <div className='uppercase bg-amber-400 rounded-[40px] text-center sm:rounded-[100px] border-2 border-black w-[60%] sm:w-[55%] lg:w-[50%] p-3 md:p-4 '>
+        <div className='uppercase bg-amber-400 rounded-[40px] text-center sm:rounded-[10rem] border-2 border-black w-3/5 sm:w-[55%] lg:w-[50%] p-2 sm:p-4'>
           <p
-            className='text-neutral-800 text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tighter uppercase'
+            className='text-neutral-800 text-3xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] tracking-tighter uppercase m-0'
             style={{
               textShadow: '0 6px 8px rgba(0,0,0,0.25)',
             }}
@@ -34,21 +32,19 @@ export default function KeynoteSec() {
         </div>
       </div>
       <div className='w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-20 my-4 sm:my-4 mx-auto'>
-     
-       <KeynoteCards
-             
-              name='Pankaj Jalote'
-              desc={
-                <>
-                  Distinguished <br /> Professor <br /> IIIT-Delhi <br />{' '}
-                  (Founding Director <br />
-                  2008 - 2018)
-                </>
-              }
-              image='/pankajJalote.png'
-              color={'bg-red'}
-              height={'h-[90%]'}
-            />
+        <KeynoteCards
+          name='Pankaj Jalote'
+          desc={
+            <>
+              Distinguished <br /> Professor <br /> IIIT-Delhi <br /> (Founding
+              Director <br />
+              2008 - 2018)
+            </>
+          }
+          image='/pankajJalote.png'
+          color={'bg-red'}
+          height={'h-[90%]'}
+        />
         {Array.from({ length: 8 }).map((keynote) => {
           return (
             <KeynoteCards
@@ -56,7 +52,12 @@ export default function KeynoteSec() {
               name='Coming Soon'
               desc={
                 <>
-                  Designation<br/>Institution<br/>Sub-Title and <br/>other info
+                  Designation
+                  <br />
+                  Institution
+                  <br />
+                  Sub-Title and <br />
+                  other info
                 </>
               }
               image='/speakerPlaceholder.png'
@@ -64,7 +65,7 @@ export default function KeynoteSec() {
               height={'h-[70%]'}
             />
           );
-        })} 
+        })}
       </div>
     </div>
   );
