@@ -32,6 +32,32 @@ const SchedulePage = () => {
     []
   );
 
+  const buttonArr = useMemo(
+    () => [
+      {
+        label: 'Day 1',
+        path: '/schedule/path1.svg',
+      },
+      {
+        label: 'Day 2',
+        path: '/schedule/path2.svg',
+      },
+      {
+        label: 'Day 3',
+        path: '/schedule/path3.svg',
+      },
+      {
+        label: 'Day 4',
+        path: '/schedule/path4.svg',
+      },
+      {
+        label: 'Day 5',
+        path: '/schedule/path5.svg',
+      },
+    ],
+    []
+  );
+
   return (
     <>
       <SEO title='Schedule | IIITD Induction 2023' />
@@ -91,36 +117,17 @@ const SchedulePage = () => {
         secondSection={
           <>
             <div className='flex flex-wrap justify-center items-start gap-10'>
-              <button
-                className={buttonStyle}
-                onClick={() => handleButtonClick('/schedule/path1.svg')}
-              >
-                Day 1
-              </button>
-              <button
-                className={buttonStyle}
-                onClick={() => handleButtonClick('/schedule/path2.svg')}
-              >
-                Day 2
-              </button>
-              <button
-                className={buttonStyle}
-                onClick={() => handleButtonClick('/schedule/path3.svg')}
-              >
-                Day 3
-              </button>
-              <button
-                className={buttonStyle}
-                onClick={() => handleButtonClick('/schedule/path4.svg')}
-              >
-                Day 4
-              </button>
-              <button
-                className={buttonStyle}
-                onClick={() => handleButtonClick('/schedule/path5.svg')}
-              >
-                Day 5
-              </button>
+              {buttonArr.map((button) => {
+                return (
+                  <button
+                    key={button.path}
+                    className={buttonStyle}
+                    onClick={() => handleButtonClick(button.path)}
+                  >
+                    {button.label}
+                  </button>
+                );
+              })}
             </div>
             <RoadMap imagePath={activeRoadmap} />
           </>
