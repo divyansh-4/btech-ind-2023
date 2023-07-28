@@ -11,17 +11,12 @@ module.exports = {
     extend: {
       colors: {
         red: '#E44F44',
-        // yellow: '#FAC018',
+        yellow: '#FAC018',
         background: '#252525',
         blue5:'#277FE6',
         purple9:'#4D2885',
         transparent: 'transparent',
         current: 'currentColor',
-        black: colors.black,
-        white: colors.white,
-        emerald: colors.emerald,
-        indigo: colors.indigo,
-        yellow: colors.yellow,
       }, 
     },
   },
