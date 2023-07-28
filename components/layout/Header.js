@@ -65,7 +65,7 @@ function Header() {
             <Image
               width={25}
               height={25}
-              src='/icons/instagram.svg'
+              src='/instagram.svg'
               alt='IIITD Logo'
               className={iconStyle}
             />
@@ -74,7 +74,7 @@ function Header() {
             <Image
               width={25}
               height={25}
-              src='/icons/linkedin.svg'
+              src='/linkedin.svg'
               alt='IIITD Logo'
               className={iconStyle}
             />
@@ -83,7 +83,7 @@ function Header() {
             <Image
               width={25}
               height={25}
-              src='/icons/twitter.svg'
+              src='/twitter.svg'
               alt='IIITD Logo'
               className={iconStyle}
             />
