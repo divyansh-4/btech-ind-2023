@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import React, { useCallback, useState, useEffect } from "react";
 import Image from "next/image";
 import SEO from "../components/common/SEO";
 import Parallax from "../components/common/Parallax";
@@ -8,6 +8,19 @@ import Body from "../components/layout/Body";
 
 const SchedulePage = () => {
   const [activeRoadmap, setActiveRoadmap] = useState("/schedule/path1.svg"); // Set the default active roadmap here
+  const [breakWord, setBreakWord] = useState(false);
+
+  useEffect(() => {
+    function FindBreak() {
+      setBreakWord(window.innerWidth < 720);
+    }
+    FindBreak();
+
+    window.addEventListener("resize", FindBreak);
+    return () => {
+      window.removeEventListener("resize", FindBreak);
+    };
+  }, []);
 
   const handleButtonClick = useCallback((roadmapImage) => {
     setActiveRoadmap(roadmapImage);
@@ -35,12 +48,14 @@ const SchedulePage = () => {
               <div className="flex justify-center items-center h-screen">
                 <TitleCard
                   graphic={
-                    <Image
-                      className="object-contain object-bottom-right"
-                      src="/2023_red.svg"
-                      alt="2023"
-                      fill={true}
-                    />
+                    <div className="relative w-3/4 h-3/4 md:w-full md:h-full sm:-right-20 md:bottom-0 -bottom-10">
+                      <Image
+                        className="object-contain object-bottom-right"
+                        src="/2023_red.svg"
+                        alt="2023"
+                        fill={true}
+                      />
+                    </div>
                   }
                   graphic2={
                     <Image
@@ -50,7 +65,15 @@ const SchedulePage = () => {
                       fill={true}
                     />
                   }
-                  title="BTECH INDUCTION"
+                  title={
+                    !breakWord ? (
+                      "BTECH INDUCTION"
+                    ) : (
+                      <span>
+                        BTECH<br></br>INDUCTION
+                      </span>
+                    )
+                  }
                   subtitle="SCHEDULE"
                   subtext="AUGUST 2 - 6"
                   variant={2}
