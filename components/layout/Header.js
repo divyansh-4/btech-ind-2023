@@ -54,12 +54,12 @@ function Header() {
           />
         </div>
         <div className='flex items-center gap-3 sm:gap-5 md:gap-8 lg:gap-10'>
-          <Link href='/' className='text-white no-underline'>
+          {/* <Link href='/' className='text-white no-underline'>
             Home
           </Link>
           <Link href='/schedule' className='text-white no-underline'>
             Schedule
-          </Link>
+          </Link> */}
           <a
             href='https://instagram.com/sc.iiitd?igshid=MmU2YjMzNjRlOQ=='
             target='_blank'
