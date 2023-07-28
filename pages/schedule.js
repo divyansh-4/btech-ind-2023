@@ -36,15 +36,9 @@ const SchedulePage = () => {
                 <TitleCard
                   graphic={
                     <Image
-<<<<<<< HEAD
-                      className="mx-20 my-1 object-contain object-bottom-right"
+                      className="object-contain object-bottom-right"
                       src="/2023_red.svg"
                       alt="2023"
-=======
-                      className='object-contain object-bottom-right'
-                      src='/2023_red.svg'
-                      alt='2023'
->>>>>>> main
                       fill={true}
                     />
                   }
@@ -67,63 +61,35 @@ const SchedulePage = () => {
         }
         secondSection={
           <div>
-<<<<<<< HEAD
-            <div className="flex justify-center items-start h-30">
+            <div className="flex flex-wrap justify-center items-start">
               {/* Add buttons in the second section */}
               <button
-                className=" px-20 py-20 bg-yellow-500 rounded text-white"
+                className="w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white"
                 onClick={() => handleButtonClick("/schedule/path1.svg")}
-=======
-            <div className='flex flex-wrap justify-center items-start'>
-              {/* Add buttons in the second section */}
-              <button
-                className='w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white'
-                onClick={() => handleButtonClick('/schedule/path1.svg')}
->>>>>>> main
               >
                 Day 1
               </button>
               <button
-<<<<<<< HEAD
-                className=" px-20 py-20 bg-yellow-500 rounded text-white"
+                className="w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white"
                 onClick={() => handleButtonClick("/schedule/path2.svg")}
-=======
-                className='w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white'
-                onClick={() => handleButtonClick('/schedule/path2.svg')}
->>>>>>> main
               >
                 Day 2
               </button>
               <button
-<<<<<<< HEAD
-                className=" px-20 py-20 bg-yellow-500 rounded text-white"
+                className="w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white"
                 onClick={() => handleButtonClick("/schedule/path3.svg")}
-=======
-                className='w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white'
-                onClick={() => handleButtonClick('/schedule/path3.svg')}
->>>>>>> main
               >
                 Day 3
               </button>
               <button
-<<<<<<< HEAD
-                className=" px-20 py-20 bg-yellow-500 rounded text-white"
+                className="w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white"
                 onClick={() => handleButtonClick("/schedule/path4.svg")}
-=======
-                className='w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white'
-                onClick={() => handleButtonClick('/schedule/path4.svg')}
->>>>>>> main
               >
                 Day 4
               </button>
               <button
-<<<<<<< HEAD
-                className=" px-20 py-20 bg-yellow-500 rounded text-white"
+                className="w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white"
                 onClick={() => handleButtonClick("/schedule/path5.svg")}
-=======
-                className='w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white'
-                onClick={() => handleButtonClick('/schedule/path5.svg')}
->>>>>>> main
               >
                 Day 5
               </button>
