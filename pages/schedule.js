@@ -20,10 +20,7 @@ const SchedulePage = () => {
         firstSection={
           <>
             <div className='relative'>
-              <Parallax
-                className='absolute top-0 left-0 w-full h-full'
-                factor={4}
-              >
+              <Parallax className='absolute top-0 left-0 w-full h-full' factor={4}>
                 <div
                   className='bg-repeat-y bg-top bg-cover md:bg-[length:100%] w-full h-full'
                   style={{
@@ -35,7 +32,7 @@ const SchedulePage = () => {
                 <TitleCard
                   graphic={
                     <Image
-                      className='mx-20 my-1 object-contain object-bottom-right'
+                      className='object-contain object-bottom-right'
                       src='/2023_red.svg'
                       alt='2023'
                       fill={true}
@@ -60,34 +57,34 @@ const SchedulePage = () => {
         }
         secondSection={
           <div>
-            <div className='flex justify-center items-start h-30'>
+            <div className='flex flex-wrap justify-center items-start'>
               {/* Add buttons in the second section */}
               <button
-                className=' px-20 py-20 bg-yellow-500 rounded text-white'
+                className='w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white'
                 onClick={() => handleButtonClick('/schedule/path1.svg')}
               >
                 Day 1
               </button>
               <button
-                className=' px-20 py-20 bg-yellow-500 rounded text-white'
+                className='w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white'
                 onClick={() => handleButtonClick('/schedule/path2.svg')}
               >
                 Day 2
               </button>
               <button
-                className=' px-20 py-20 bg-yellow-500 rounded text-white'
+                className='w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white'
                 onClick={() => handleButtonClick('/schedule/path3.svg')}
               >
                 Day 3
               </button>
               <button
-                className=' px-20 py-20 bg-yellow-500 rounded text-white'
+                className='w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white'
                 onClick={() => handleButtonClick('/schedule/path4.svg')}
               >
                 Day 4
               </button>
               <button
-                className=' px-20 py-20 bg-yellow-500 rounded text-white'
+                className='w-full md:w-auto md:mx-2 mb-2 px-20 py-4 bg-yellow-500 rounded text-white'
                 onClick={() => handleButtonClick('/schedule/path5.svg')}
               >
                 Day 5
