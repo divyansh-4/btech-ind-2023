@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useState, useEffect, useMemo } from 'react';
 import Image from 'next/image';
 import SEO from '../components/common/SEO';
 import Parallax from '../components/common/Parallax';
@@ -26,8 +26,11 @@ const SchedulePage = () => {
     setActiveRoadmap(roadmapImage);
   }, []);
 
-  const buttonStyle =
-    'text-white font-bold bg-yellow px-10 py-2 text-lg sm:text-xl md:text-2xl lg:text-4xl rounded-2xl';
+  const buttonStyle = useMemo(
+    () =>
+      'text-white font-bold bg-yellow px-10 py-2 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-2xl',
+    []
+  );
 
   return (
     <>
