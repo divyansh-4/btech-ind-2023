@@ -1,17 +1,11 @@
-import Image from "next/image";
-
 const RoadMap = ({ imagePath }) => {
   return (
-    <>
-      <div
-        className="bg-contain bg-center bg-no-repeat h-[3000px] md:h-[1000px] w-200% md:w-200%"
-        style={{
-          backgroundImage: `url('${imagePath}')`,
-        }}
-      >
-        {/* Add any other content or elements you want to display within the RoadMap component */}
-      </div>
-    </>
+    <div
+      className='bg-contain bg-center bg-no-repeat -mt-[45rem] h-[150rem] sm:-mt-[100rem] md:mt-0 sm:h-[300rem] md:h-[100rem]'
+      style={{
+        backgroundImage: `url('${imagePath}')`,
+      }}
+    ></div>
   );
 };
 
