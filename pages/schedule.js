@@ -28,7 +28,7 @@ const SchedulePage = () => {
 
   return (
     <>
-      <SEO title="Schedule" />
+      <SEO title="Schedule | IIITD Induction 2023" />
       <Body
         variant={2}
         firstSection={
