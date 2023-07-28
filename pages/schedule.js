@@ -28,7 +28,7 @@ const SchedulePage = () => {
 
   const buttonStyle = useMemo(
     () =>
-      'text-white font-bold bg-yellow px-10 py-2 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-2xl',
+      'text-white font-bold border-yellow border-2 px-10 py-2 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-2xl',
     []
   );
 
@@ -121,7 +121,11 @@ const SchedulePage = () => {
                 return (
                   <button
                     key={button.path}
-                    className={buttonStyle}
+                    className={
+                      activeRoadmap === button.path
+                        ? 'text-white font-bold bg-yellow px-10 py-2 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-2xl'
+                        : buttonStyle
+                    }
                     onClick={() => handleButtonClick(button.path)}
                   >
                     {button.label}
