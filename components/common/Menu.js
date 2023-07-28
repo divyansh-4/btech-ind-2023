@@ -62,14 +62,14 @@ export default function Menu() {
       </div>
       <div className='flex items-center'>
         <div className={`${menuItem}`}>
-          <Image
+          <a href='https://www.youtube.com/watch?v=YY65qJCTfO8&t=43s&ab_channel=IIIT-DelhiOfficial' target='_blank'><Image
             alt='virtual_tour'
             src='/menu/virtual_tour.png'
             {...virtualTourResolution}
-          />
+          /></a>
         </div>
         <div className={`${menuItem} relative`} style={{ top: `${offset}px` }}>
-          <Image alt='contact' src='/menu/contact.png' {...contactResolution} />
+          <a href='https://www.iiitd.ac.in/contact' target='_blank'><Image alt='contact' src='/menu/contact.png' {...contactResolution} /></a>
         </div>
       </div>
       <div style={{ height: `${offset}px` }}></div>
