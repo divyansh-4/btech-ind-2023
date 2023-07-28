@@ -4,7 +4,12 @@ import Footer from "./Footer";
 
 import { useEffect, useMemo, useState } from "react";
 
-export default function Body({ firstSection, secondSection, thirdSection }) {
+export default function Body({
+  firstSection,
+  secondSection,
+  thirdSection,
+  variant = 1,
+}) {
   const ripRatio = useMemo(() => 1920 / 259, []);
   const [ripHeight, setRipHeight] = useState(0);
 
@@ -34,7 +39,9 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
     <>
       <div className="relative">
         <div
-          className={`bg-[#DF392E] relative bg-bottom bg-cover bg-no-repeat`}
+          className={`${
+            variant === 1 ? "bg-[#DF392E]" : "bg-yellow"
+          } relative bg-bottom bg-cover bg-no-repeat`}
           style={{
             backgroundImage: "url('/background_filters/section1.png')",
             paddingBottom: `${ripHeight / 1.5}px`,
@@ -55,7 +62,9 @@ export default function Body({ firstSection, secondSection, thirdSection }) {
           </div>
         </div>
         <div
-          className="bg-[#32BD6C] relative z-[1] bg-bottom bg-cover bg-no-repeat"
+          className={`${
+            variant === 1 ? "bg-[#32BD6C]" : "bg-purple9"
+          } relative z-[1] bg-bottom bg-cover bg-no-repeat`}
           style={{
             top: `-${ripHeight / 1.5}px`,
             clipPath: `polygon(${clipPathTop}, ${clipPathBottom})`,

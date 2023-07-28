@@ -1,11 +1,11 @@
-import { Menu, Close } from '@mui/icons-material';
-import Image from 'next/image';
-import React, { useMemo, useState, useRef, useEffect } from 'react';
-import MenuComponent from '../common/Menu';
-import Link from 'next/link';
+import { Menu, Close } from "@mui/icons-material";
+import Image from "next/image";
+import React, { useMemo, useState, useRef, useEffect } from "react";
+import MenuComponent from "../common/Menu";
+import Link from "next/link";
 
 function Header() {
-  const iconStyle = useMemo(() => 'w-4 sm:w-5 md:w-6 lg:w-7', []);
+  const iconStyle = useMemo(() => "w-4 sm:w-5 md:w-6 lg:w-7", []);
   const [menu, setMenuState] = useState(false);
   const headerRef = useRef(null);
 
@@ -19,16 +19,16 @@ function Header() {
     }
 
     calculateHeight();
-    window.addEventListener('resize', calculateHeight);
+    window.addEventListener("resize", calculateHeight);
 
     return () => {
-      window.removeEventListener('resize', calculateHeight);
+      window.removeEventListener("resize", calculateHeight);
     };
   }, []);
 
   return (
-    <div className='w-full bg-white bg-opacity-10 sticky z-50' ref={headerRef}>
-      <div className='flex items-center justify-between py-2 px-5 md:px-5 lg:px-10 pt-3 pb-3'>
+    <div className="w-full bg-white bg-opacity-10 sticky z-50" ref={headerRef}>
+      <div className="flex items-center justify-between py-2 px-5 md:px-5 lg:px-10 pt-3 pb-3">
         {!menu ? (
           <Menu
             className={`text-white text-2xl md:text-3xl lg:text-4xl cursor-pointer`}
@@ -44,16 +44,18 @@ function Header() {
             }}
           />
         )}
-        <div className='absolute left-1/2 -translate-x-1/2'>
-          <Image
-            width={125}
-            height={125}
-            src='/induction.svg'
-            alt='IIITD Logo'
-            className='w-20 sm:w-24 md:w-28 lg:w-32'
-          />
+        <div className="absolute left-1/2 -translate-x-1/2">
+          <Link href="/">
+            <Image
+              width={125}
+              height={125}
+              src="/induction.svg"
+              alt="IIITD Logo"
+              className="w-20 sm:w-24 md:w-28 lg:w-32"
+            />
+          </Link>
         </div>
-        <div className='flex items-center gap-3 sm:gap-5 md:gap-8 lg:gap-10'>
+        <div className="flex items-center gap-3 sm:gap-5 md:gap-8 lg:gap-10">
           {/* <Link href='/' className='text-white no-underline'>
             Home
           </Link>
@@ -61,8 +63,8 @@ function Header() {
             Schedule
           </Link> */}
           <a
-            href='https://instagram.com/sc.iiitd?igshid=MmU2YjMzNjRlOQ=='
-            target='_blank'
+            href="https://instagram.com/sc.iiitd?igshid=MmU2YjMzNjRlOQ=="
+            target="_blank"
           >
             <Image
               width={25}
@@ -72,7 +74,7 @@ function Header() {
               className={iconStyle}
             />
           </a>
-          <a href='https://www.linkedin.com/school/iiit-delhi/' target='_blank'>
+          <a href="https://www.linkedin.com/school/iiit-delhi/" target="_blank">
             <Image
               width={25}
               height={25}
@@ -81,7 +83,7 @@ function Header() {
               className={iconStyle}
             />
           </a>
-          <a href='https://twitter.com/IIITDelhi' target='_blank'>
+          <a href="https://twitter.com/IIITDelhi" target="_blank">
             <Image
               width={25}
               height={25}
@@ -92,10 +94,10 @@ function Header() {
           </a>
         </div>
       </div>
-      <div className='absolute top-[100%] left-0'>
+      <div className="absolute top-[100%] left-0">
         <div
           className={`relative duration-100 transition-all ${
-            menu ? 'left-0' : 'left-[-100%]'
+            menu ? "left-0" : "left-[-100%]"
           }`}
           style={{ height: `${menuHeight}px` }}
         >
