@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Header from "./Header";
 import Footer from "./Footer";
 
@@ -12,10 +11,12 @@ export default function Body({
 }) {
   const ripRatio = useMemo(() => 1920 / 259, []);
   const [ripHeight, setRipHeight] = useState(0);
+  const [ripHeight2, setRipHeight2] = useState(0);
 
   useEffect(() => {
     function FindHeight() {
-      setRipHeight((2 * window.innerWidth) / ripRatio);
+      setRipHeight((0.001 * window.innerWidth) / ripRatio);
+      setRipHeight2((window.innerWidth) / ripRatio);
     }
     FindHeight();
     window.addEventListener("resize", FindHeight);
@@ -26,14 +27,8 @@ export default function Body({
   }, []);
 
   const clipPathTop = useMemo(() => {
-    return `0px ${ripHeight / 2.3}px, 50% ${ripHeight / 6.5}px, 100% 0px`;
-  }, [ripHeight]);
-
-  const clipPathBottom = useMemo(() => {
-    return `100% calc(100% - ${ripHeight / 3}px), 50% calc(100% - ${
-      ripHeight / 6.5
-    }px), 0px 100%`;
-  }, [ripHeight]);
+    return `0px ${ripHeight2 / 5}px, 25% ${ripHeight2 / 10}px, 100% 0px`;
+  }, [ripHeight2]);
 
   return (
     <>
@@ -44,21 +39,27 @@ export default function Body({
           } relative bg-bottom bg-cover bg-no-repeat`}
           style={{
             backgroundImage: "url('/background_filters/section1.png')",
-            paddingBottom: `${ripHeight / 1.5}px`,
+            paddingBottom: `${ripHeight2 / 1.5}px`,
           }}
         >
           <Header />
           {firstSection}
           <div
             className={`absolute w-full h-[${ripHeight}px] bottom-0 left-0 z-[2]`}
-            style={{ height: `${ripHeight}px` }}
-          >
-            <Image
-              src="/background_filters/ripped1.svg"
-              fill={true}
-              alt="rip"
-              className="object-cover object-center"
-            />
+            style={{ 
+              height: `${ripHeight2/1.5}px`}}
+          > 
+          <div
+            style={{
+              width: "100%",
+              height: "220px",
+              backgroundImage: `url('/background_filters/ripped1.svg')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              marginTop: `-${ripHeight2/18}px`, 
+            }}
+          />
           </div>
         </div>
         <div
@@ -67,44 +68,49 @@ export default function Body({
           } relative z-[1] bg-bottom bg-cover bg-no-repeat`}
           style={{
             top: `-${ripHeight / 1.5}px`,
-            clipPath: `polygon(${clipPathTop}, ${clipPathBottom})`,
+            clipPath: `polygon(${clipPathTop}, 100% 100%, 0px 100%)`,
             backgroundImage: "url('/background_filters/section2.png')",
-            paddingTop: `${ripHeight / 1.5}px`,
+            paddingTop: `${ripHeight2 / 4}px`,
             paddingBottom: `${ripHeight}px`,
+            marginTop: `-25px`,
           }}
         >
           {secondSection}
         </div>
         {thirdSection && (
+          <>
           <div
-            className="bg-[#DF392E] relative bg-bottom bg-cover bg-no-repeat"
+            className={`absolute w-full h-[${ripHeight}px] bottom-0 left-0 z-[4]`}
+            style={{ 
+              height: `${ripHeight2/1.5}px`, 
+            }}
+          > 
+          <div
+            style={{
+              width: "100%",
+              height: "200px",
+              backgroundImage: `url('/background_filters/ripped1.svg')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              marginTop: `-${ripHeight2 * 4.8}px`,
+            }}
+          />
+          </div>
+          <div
+            className="bg-[#DF392E] z-[3] relative bg-bottom bg-cover bg-no-repeat"
             style={{
               top: `-${ripHeight}px`,
               backgroundImage: "url('/background_filters/section3.png')",
+              clipPath: `polygon(${clipPathTop}, 100% 100%, 0px 100%)`,
               paddingTop: `${ripHeight / 3}px`,
+              marginTop: `-24px`,
             }}
-          >
-            <div
-              className="absolute w-full z-[3]"
-              style={{
-                height: `${ripHeight}px`,
-                top: `-${ripHeight / 3}px`,
-              }}
-            >
-              <Image
-                src="/background_filters/ripped1.svg"
-                fill={true}
-                alt="rip"
-                className="object-cover object-center"
-              />
-            </div>
-            {thirdSection}
+          >            
+          {thirdSection}
           </div>
+          </>
         )}
-        <div
-          className={`absolute w-full bg-background z-[5]`}
-          style={{ height: `${ripHeight}px`, bottom: `0` }}
-        ></div>
       </div>
       <Footer />
     </>
