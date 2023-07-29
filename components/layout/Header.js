@@ -28,7 +28,7 @@ function Header() {
 
   return (
     <div className='w-full bg-white bg-opacity-10 sticky z-50' ref={headerRef}>
-      <div className='flex items-center justify-between py-2 px-5 md:px-5 lg:px-10'>
+      <div className='flex items-center justify-between py-2 px-4 md:px-5 lg:px-10 pt-3 pb-3'>
         {!menu ? (
           <Menu
             className={`text-white text-2xl md:text-3xl lg:text-4xl cursor-pointer`}
@@ -44,20 +44,18 @@ function Header() {
             }}
           />
         )}
-        <Image
-          width={125}
-          height={125}
-          src='/induction.svg'
-          alt='IIITD Logo'
-          className='w-20 sm:w-24 md:w-28 lg:w-32'
-        />
+        <div className='absolute left-1/2 -translate-x-1/2'>
+          <Link href='/'>
+            <Image
+              width={125}
+              height={125}
+              src='/induction.svg'
+              alt='IIITD Logo'
+              className='w-20 sm:w-24 md:w-28 lg:w-32'
+            />
+          </Link>
+        </div>
         <div className='flex items-center gap-3 sm:gap-5 md:gap-8 lg:gap-10'>
-          <Link href='/' className='text-white no-underline'>
-            Home
-          </Link>
-          <Link href='/schedule' className='text-white no-underline'>
-            Schedule
-          </Link>
           <a
             href='https://instagram.com/sc.iiitd?igshid=MmU2YjMzNjRlOQ=='
             target='_blank'
@@ -65,7 +63,7 @@ function Header() {
             <Image
               width={25}
               height={25}
-              src='/icons/instagram.svg'
+              src='/instagram.svg'
               alt='IIITD Logo'
               className={iconStyle}
             />
@@ -74,7 +72,7 @@ function Header() {
             <Image
               width={25}
               height={25}
-              src='/icons/linkedin.svg'
+              src='/linkedin.svg'
               alt='IIITD Logo'
               className={iconStyle}
             />
@@ -83,7 +81,7 @@ function Header() {
             <Image
               width={25}
               height={25}
-              src='/icons/twitter.svg'
+              src='/twitter.svg'
               alt='IIITD Logo'
               className={iconStyle}
             />
