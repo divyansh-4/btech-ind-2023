@@ -111,7 +111,7 @@ export default function Body({
         )}
         <div
           className={`absolute w-full bg-background z-[5]`}
-          style={{ overflow: "hidden", height: `${ripHeight}px`, bottom: `0`}}
+          style={{ height: `${ripHeight}px`, bottom: `0`}}
         >
           <Footer />
         </div>
