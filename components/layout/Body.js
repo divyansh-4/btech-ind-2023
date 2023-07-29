@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Header from "./Header";
 import Footer from "./Footer";
-import styles from '../../styles/Body.module.css';
 
 import { useEffect, useMemo, useState } from "react";
 import { MarginTwoTone } from "@mui/icons-material";
@@ -110,8 +109,8 @@ export default function Body({
             {thirdSection}
           </div>
         )}
-        <div 
-          className={`absolute w-full z-[5] ${styles["no-scrollbar"]}`}
+        <div
+          className={`absolute w-full bg-background z-[5]`}
           style={{ height: `${ripHeight}px`, bottom: `0`}}
         >
           <Footer />
