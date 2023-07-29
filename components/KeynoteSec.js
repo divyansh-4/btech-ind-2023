@@ -42,10 +42,54 @@ export default function KeynoteSec() {
             </>
           }
           image='/pankajJalote.png'
-          color={'bg-red'}
+          color={'bg-yellow'}
           height={'h-[90%]'}
         />
-        {Array.from({ length: 8 }).map((keynote) => {
+        <KeynoteCards
+          name='Dr. Anil Gupta'
+          desc={
+            <>
+              Padma Shri Awardee<br/>Honey Bee Founder<br/>Retd. IIM Professor<br/>
+            </>
+          }
+          image='/drAnil.png'
+          color={'bg-blue5'}
+          height={'h-[70%]'}
+        />
+        <KeynoteCards
+          name='Kullu'
+          desc={
+            <>
+              <br/>Comedian<br/>Aditya Kulshreshtha<br/>aka<br/>Kullu
+            </>
+          }
+          image='/kullu.png'
+          color={'bg-red'}
+          height={'h-[80%]'}
+        />
+        <KeynoteCards
+          name='Ayushman Pandita'
+          desc={
+            <>
+             <br/>Growth Rocket Founder<br/> Content Creator
+            </>
+          }
+          image='/aPandita.png'
+          color={'bg-yellow'}
+          height={'h-[70%]'}
+        />
+        <KeynoteCards
+          name='Shivansh garg'
+          desc={
+            <>
+              <br/>Entrepreneur<br/>Angel investor<br/>Content Creator<br/>
+            </>
+          }
+          image='/sGarg.png'
+          color={'bg-blue5'}
+          height={'h-[70%]'}
+        />
+        {Array.from({ length: 1 }).map((keynote) => {
           return (
             <KeynoteCards
               key={keynote}
