@@ -13,11 +13,11 @@ function UnderLineText({ text }) {
 
 export default function Menu() {
   const menuItem =
-    'flex-grow-0 flex-shrink-1 basis-[50%] flex justify-center transiton-all duration-100 cursor-pointer';
-  const scheduleResolution = { width: 199, height: 120 };
-  const iccResolution = { width: 177, height: 140 };
-  const contactResolution = { width: 176, height: 178 };
-  const clubsResolution = { width: 209, height: 121 };
+    'flex-grow-0 flex-shrink-1 basis-[50%] flex justify-center hover:scale-110 hover:rotate-12 transiton-all duration-100 cursor-pointer';
+  const scheduleResolution = { width: 181, height: 129 };
+  const galleryResolution = { width: 187, height: 109 };
+  const contactResolution = { width: 142, height: 156 };
+  const virtualTourResolution = { width: 161, height: 127 };
   const offset = scheduleResolution.height / 2;
 
   const menuLinks = useMemo(
@@ -39,10 +39,7 @@ export default function Menu() {
   );
 
   return (
-    <div
-      className='w-screen h-full sm:h-auto sm:w-fit p-4 bg-yellow flex flex-col justify-between bg-cover bg-center bg-no-repeat'
-      style={{ backgroundImage: "url('/menu/bg_texture.png')" }}
-    >
+    <div className='w-screen h-full sm:h-auto sm:w-fit p-4 bg-yellow rounded-3xl flex flex-col justify-between'>
       <div>
         <span className='rounded-2xl bg-red text-background p-1 border-4 border-background border-solid text-xs sm:text-sm font-bold w-fit'>
           DISCOVER MORE
@@ -60,31 +57,19 @@ export default function Menu() {
           </Link>
         </div>
         <div className={`${menuItem} relative`} style={{ top: `${offset}px` }}>
-          <Link
-            href='http://studentcouncil.iiitd.edu.in/clubs.html'
-            target='_blank'
-          >
-            <Image alt='clubs' src='/menu/clubs.png' {...clubsResolution} />
-          </Link>
+          <Image alt='gallery' src='/menu/gallery.png' {...galleryResolution} />
         </div>
       </div>
       <div className='flex items-center'>
         <div className={`${menuItem}`}>
-          <Link
-            href='https://iiitd.ac.in/life/discipline-grievance/anti-sexual-harassment-committee'
-            target='_blank'
-          >
-            <Image alt='icc' src='/menu/icc.png' {...iccResolution} />
-          </Link>
+          <Image
+            alt='virtual_tour'
+            src='/menu/virtual_tour.png'
+            {...virtualTourResolution}
+          />
         </div>
         <div className={`${menuItem} relative`} style={{ top: `${offset}px` }}>
-          <Link href='https://www.iiitd.ac.in/contact' target='_blank'>
-            <Image
-              alt='contact'
-              src='/menu/contact.png'
-              {...contactResolution}
-            />
-          </Link>
+          <Image alt='contact' src='/menu/contact.png' {...contactResolution} />
         </div>
       </div>
       <div style={{ height: `${offset}px` }}></div>
@@ -95,19 +80,18 @@ export default function Menu() {
           </Link>
           {menuLinks.map((menuItem) => {
             return (
-              <Link
+              <a
                 key={menuItem.href}
                 className='text-black no-underline'
                 href={menuItem.href}
                 target='_blank'
               >
                 <UnderLineText text={menuItem.name} />
-              </Link>
+              </a>
             );
           })}
-          <UnderLineText text='Team' />
         </div>
-        {/* <div className="w-10 h-10 rounded-full bg-background"></div> */}
+        <div className='w-10 h-10 rounded-full bg-background'></div>
       </div>
     </div>
   );

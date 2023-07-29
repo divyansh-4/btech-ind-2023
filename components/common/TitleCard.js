@@ -29,9 +29,7 @@ export default function TitleCard({
         {title}
       </div>
       {variant === 2 ? (
-        <div className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-red font-bold">
-          {subtitle}
-        </div>
+        <div className="text-9xl text-red font-bold">{subtitle}</div>
       ) : null}
       <div className="absolute -bottom-10 -right-5 overflow-visible w-1/2 h-1/2">
         {graphic}

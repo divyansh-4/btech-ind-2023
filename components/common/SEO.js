@@ -3,11 +3,9 @@ import { NextSeo } from 'next-seo';
 import { BASE_URL } from '../../utils/baseUrl';
 
 function SEO({ title, desc, imgSrc, url }) {
-  const logoSrc = '/seo/banner.png';
-  const imageSrc = imgSrc ?? logoSrc;
-  const description =
-    desc ??
-    "IIITD presents #Induction2023 for the incoming batch of B.Tech. students from 2nd to 6th August, 2023. The induction is a significant event that marks the beginning of an exciting and enriching journey ahead, for the new batch of students. Let's celebrate the dawn of new beginnings, embrace boundless opportunities, and create treasured memories as our freshers embark on this transformative journey of learning and growth!";
+  const logoSrc = '/favicon.ico';
+  const imageSrc = imgSrc ?? logoSrc; // we need a logo svg
+  const description = desc ?? 'IIITD Induction 2023'; // we need description content, we can have separate descriptions for separate pages
   const seoTitle = title ?? 'IIITD Induction 2023';
   const seoUrl = url ?? BASE_URL;
   return (
