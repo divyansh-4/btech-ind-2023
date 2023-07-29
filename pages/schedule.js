@@ -28,7 +28,7 @@ const SchedulePage = () => {
 
   const buttonStyle = useMemo(
     () =>
-      'text-white font-bold bg-yellow bg-opacity-30 text-opacity-50 px-10 sm:px-14 py-2 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-2xl',
+      'text-white font-bold border-yellow border-2 px-10 sm:px-14 py-2 text-lg sm:text-xl md:text-2xl lg:text-3xl rounded-2xl',
     []
   );
 
