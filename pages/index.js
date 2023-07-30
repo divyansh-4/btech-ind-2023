@@ -53,15 +53,15 @@ export default function Home() {
         }
         secondSection={
           <>
-            <div className='relative h-fit top-[-40vh]  pt-[40vh]'>
+            <div className='relative h-fit '>
               <Parallax
                 className='absolute top-0 left-0 w-full h-full z-0 '
                 factor={4}
               >
                 <div
-                  className='bg-top bg-repeat-y bg-[length:100%] w-full h-full'
+                  className='bg-top bg-repeat-y bg-cover md:bg-[length:100%]  w-full h-full top-[-80vh] absolute'
                   style={{
-                    backgroundImage: "url('/stickerforkeynote.png') ",
+                    backgroundImage: "url('/Group 339.png') ",
                   }}
                 ></div>
               </Parallax>
