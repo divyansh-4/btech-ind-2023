@@ -9,6 +9,7 @@ export default function Body({
   firstSection,
   secondSection,
   thirdSection,
+  fourthSection,
   variant = 1,
 }) {
   const [ripHeight, setRipHeight] = useState(0);
@@ -17,9 +18,9 @@ export default function Body({
   useEffect(() => {
     function calculateRipHeight() {
       const screenWidth = window.innerWidth;
-      let ripRatio = 13.6; 
+      let ripRatio = 13.6;
       if (screenWidth < 768) {
-        ripRatio = 9.6; 
+        ripRatio = 9.6;
       } else if (screenWidth >= 1200) {
         ripRatio = 16;
       }
@@ -93,7 +94,9 @@ export default function Body({
               top: `-${ripHeight}px`,
               backgroundImage: "url('/background_filters/section3.png')",
               paddingTop: `${ripHeight / 3}px`,
-              paddingBottom: `${screenWidth < 768 ? ripHeight * 5 : ripHeight/2}px`,
+              paddingBottom: `${
+                screenWidth < 768 ? ripHeight * 5 : ripHeight / 2
+              }px`,
             }}
           >
             <div
@@ -113,10 +116,37 @@ export default function Body({
             {thirdSection}
           </div>
         )}
+        {fourthSection ? (
+          <div
+            className="relative bg-yellow bg-cover bg-top bg-no-repeat"
+            style={{
+              top: `-${ripHeight}px`,
+              backgroundImage: "url('/background_filters/section1.png')",
+              paddingTop: `${ripHeight / 3}px`,
+            }}
+          >
+            <div
+              className="absolute w-full z-[2]"
+              style={{
+                height: `${ripHeight}px`,
+                top: `-${ripHeight / 2}px`,
+                transform: "rotateZ(3deg)",
+              }}
+            >
+              <Image
+                src="/background_filters/ripped1.svg"
+                fill={true}
+                alt="rip"
+                className="object-cover object-center"
+              />
+            </div>
+            {fourthSection}
+          </div>
+        ) : null}
         <div
           className={`absolute w-full bg-background z-[5]`}
-          style={{ 
-            marginTop: `-${ripHeight}px`, 
+          style={{
+            marginTop: `-${ripHeight}px`,
             bottom: `0`,
           }}
         >
