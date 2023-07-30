@@ -12,6 +12,7 @@ export default function Body({
   variant = 1,
 }) {
   const [ripHeight, setRipHeight] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
     function calculateRipHeight() {
@@ -23,6 +24,8 @@ export default function Body({
         ripRatio = 16;
       }
       setRipHeight((2 * screenWidth) / ripRatio);
+
+      setScreenWidth(screenWidth);
     }
 
     calculateRipHeight();
@@ -90,7 +93,7 @@ export default function Body({
               top: `-${ripHeight}px`,
               backgroundImage: "url('/background_filters/section3.png')",
               paddingTop: `${ripHeight / 3}px`,
-              paddingBottom: `${ripHeight * 2}px`,
+              paddingBottom: `${screenWidth < 768 ? ripHeight * 3 : ripHeight}px`,
             }}
           >
             <div
