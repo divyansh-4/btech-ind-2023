@@ -90,6 +90,7 @@ export default function Body({
               top: `-${ripHeight}px`,
               backgroundImage: "url('/background_filters/section3.png')",
               paddingTop: `${ripHeight / 3}px`,
+              paddingBottom: `${ripHeight * 2}px`,
             }}
           >
             <div
@@ -111,7 +112,10 @@ export default function Body({
         )}
         <div
           className={`absolute w-full bg-background z-[5]`}
-          style={{ height: `${ripHeight}px`, bottom: `0`}}
+          style={{ 
+            marginTop: `-${ripHeight}px`, 
+            bottom: `0`,
+          }}
         >
           <Footer />
         </div>
