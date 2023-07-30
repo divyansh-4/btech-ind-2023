@@ -1,11 +1,11 @@
-import TitleCard from '../components/common/TitleCard';
-import WelcomeCard from '../components/index/WelcomeCard';
-import SEO from '../components/common/SEO';
-import Body from '../components/layout/Body';
-import Image from 'next/image';
-import Parallax from '../components/common/Parallax';
-import KeynoteSec from '../components/KeynoteSec';
-import Gallery from '../components/layout/Gallery';
+import TitleCard from "../components/common/TitleCard";
+import WelcomeCard from "../components/index/WelcomeCard";
+import SEO from "../components/common/SEO";
+import Body from "../components/layout/Body";
+import Image from "next/image";
+import Parallax from "../components/common/Parallax";
+import KeynoteSec from "../components/KeynoteSec";
+import Gallery from "../components/layout/Gallery";
 
 export default function Home() {
   return (
@@ -14,25 +14,25 @@ export default function Home() {
       <Body
         firstSection={
           <>
-            <div className='relative'>
+            <div className="relative">
               <Parallax
-                className='absolute top-0 left-0 w-full h-full'
+                className="absolute top-0 left-0 w-full h-full"
                 factor={4}
               >
                 <div
-                  className='bg-repeat-y bg-cover md:bg-[length:100%]   w-full h-full bg-top'
+                  className="bg-repeat-y bg-[length:500%] md:bg-[length:100%] w-full h-full bg-top"
                   style={{
                     backgroundImage: "url('/stickerwall.png')",
                   }}
                 />
               </Parallax>
-              <div className='flex justify-center items-center h-screen'>
+              <div className="flex justify-center items-center h-screen">
                 <TitleCard
                   graphic={
                     <Image
-                      className='object-contain object-bottom-right'
-                      src='/2023.svg'
-                      alt='2023'
+                      className="object-contain object-bottom-right"
+                      src="/2023.svg"
+                      alt="2023"
                       fill={true}
                     />
                   }
@@ -41,11 +41,11 @@ export default function Home() {
                       INDUCTION<br></br>BTECH
                     </span>
                   }
-                  subtext='AUGUST 2 - 6'
+                  subtext="AUGUST 2 - 6"
                   variant={1}
                 />
               </div>
-              <div className='flex justify-center items-center h-[120vh]'>
+              <div className="flex justify-center items-center h-[120vh]">
                 <WelcomeCard />
               </div>
             </div>
@@ -53,13 +53,13 @@ export default function Home() {
         }
         secondSection={
           <>
-            <div className='relative h-fit '>
+            <div className="relative h-fit ">
               <Parallax
-                className='absolute top-0 left-0 w-full h-full z-0 '
+                className="absolute top-0 left-0 w-full h-full z-0 "
                 factor={4}
               >
                 <div
-                  className='bg-top bg-repeat-y bg-cover md:bg-[length:100%]  w-full h-full top-[-80vh] absolute'
+                  className="bg-top bg-repeat-y bg-[length: 500%] md:bg-[length:100%]  w-full h-full top-[-40vh] absolute"
                   style={{
                     backgroundImage: "url('/Group 339.png') ",
                   }}
@@ -70,6 +70,21 @@ export default function Home() {
           </>
         }
         thirdSection={<Gallery />}
+        // fourthSection={
+        //   <div className="h-screen overflow-y-hidden relative">
+        //     <Parallax
+        //       className="absolute w-full h-full top-0 left-0"
+        //       factor={4}
+        //     >
+        //       <div
+        //         className="bg-repeat-y bg-[length:500%] md:bg-[length:100%] w-full h-full bg-top"
+        //         style={{
+        //           backgroundImage: "url('/stickerwall.png')",
+        //         }}
+        //       />
+        //     </Parallax>
+        //   </div>
+        // }
       />
     </>
   );
