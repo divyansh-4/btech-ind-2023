@@ -3,6 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 import { useEffect, useMemo, useState } from "react";
+import { MarginTwoTone } from "@mui/icons-material";
 
 export default function Body({
   firstSection,
@@ -10,18 +11,28 @@ export default function Body({
   thirdSection,
   variant = 1,
 }) {
-  const ripRatio = useMemo(() => 1920 / 259, []);
   const [ripHeight, setRipHeight] = useState(0);
+  const [screenWidth, setScreenWidth] = useState(0);
 
   useEffect(() => {
-    function FindHeight() {
-      setRipHeight((2 * window.innerWidth) / ripRatio);
+    function calculateRipHeight() {
+      const screenWidth = window.innerWidth;
+      let ripRatio = 13.6; 
+      if (screenWidth < 768) {
+        ripRatio = 9.6; 
+      } else if (screenWidth >= 1200) {
+        ripRatio = 16;
+      }
+      setRipHeight((2 * screenWidth) / ripRatio);
+
+      setScreenWidth(screenWidth);
     }
-    FindHeight();
-    window.addEventListener("resize", FindHeight);
+
+    calculateRipHeight();
+    window.addEventListener("resize", calculateRipHeight);
 
     return () => {
-      window.removeEventListener("resize", FindHeight);
+      window.removeEventListener("resize", calculateRipHeight);
     };
   }, []);
 
@@ -82,6 +93,7 @@ export default function Body({
               top: `-${ripHeight}px`,
               backgroundImage: "url('/background_filters/section3.png')",
               paddingTop: `${ripHeight / 3}px`,
+              paddingBottom: `${screenWidth < 768 ? ripHeight * 5 : ripHeight/2}px`,
             }}
           >
             <div
@@ -103,10 +115,14 @@ export default function Body({
         )}
         <div
           className={`absolute w-full bg-background z-[5]`}
-          style={{ height: `${ripHeight}px`, bottom: `0` }}
-        ></div>
+          style={{ 
+            marginTop: `-${ripHeight}px`, 
+            bottom: `0`,
+          }}
+        >
+          <Footer />
+        </div>
       </div>
-      <Footer />
     </>
   );
 }
