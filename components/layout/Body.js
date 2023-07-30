@@ -144,10 +144,11 @@ export default function Body({
           </div>
         ) : null}
         <div
-          className={`absolute w-full bg-background z-[5]`}
+          className={`absolute w-full bg-background z-[5] flex items-center`}
           style={{
             marginTop: `-${ripHeight}px`,
             bottom: `0`,
+            minHeight: `${ripHeight}px`,
           }}
         >
           <Footer />
