@@ -6,7 +6,7 @@ import Image from "next/image";
 import Parallax from "../components/common/Parallax";
 import KeynoteSec from "../components/KeynoteSec";
 import Gallery from "../components/layout/Gallery";
-// import TeamCards from "../components/TeamCards";
+import TeamCards from "../components/TeamCards";
 // import TeamFlipcard from "../components/TeamFlipcard";
 
 export default function Home() {
@@ -87,9 +87,9 @@ export default function Home() {
               />
             </Parallax>
             
-            {/* <TeamCards bg ={'bg-blue5'} teamName="Design Team" teamMembers={["Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras"]} />
+             <TeamCards bg ={'bg-blue5'} teamName="Design Team" teamMembers={["Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras"]} />
             
-            <TeamFlipcard teamName={<>Design<br/>Team </>} bg={'bg-blue5'}/> */}
+            {/*<TeamFlipcard teamName={<>Design<br/>Team </>} bg={'bg-blue5'}/> */}
           </div>
         }
       />
