@@ -70,21 +70,21 @@ export default function Home() {
           </>
         }
         thirdSection={<Gallery />}
-        fourthSection={
-          <div className="h-screen overflow-y-hidden relative">
-            <Parallax
-              className="absolute w-full h-full top-0 left-0"
-              factor={4}
-            >
-              <div
-                className="bg-repeat-y bg-[length:500%] md:bg-[length:100%] w-full h-full bg-top"
-                style={{
-                  backgroundImage: "url('/stickerwall.png')",
-                }}
-              />
-            </Parallax>
-          </div>
-        }
+        // fourthSection={
+        //   <div className="h-screen overflow-y-hidden relative">
+        //     <Parallax
+        //       className="absolute w-full h-full top-0 left-0"
+        //       factor={4}
+        //     >
+        //       <div
+        //         className="bg-repeat-y bg-[length:500%] md:bg-[length:100%] w-full h-full bg-top"
+        //         style={{
+        //           backgroundImage: "url('/stickerwall.png')",
+        //         }}
+        //       />
+        //     </Parallax>
+        //   </div>
+        // }
       />
     </>
   );
