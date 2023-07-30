@@ -106,7 +106,10 @@ function Header() {
           </a>
         </div>
       </div>
-      <div className="absolute top-[100%] left-0">
+      <div
+        className="absolute top-[100%] left-0"
+        style={{ visibility: menu ? "visible" : "hidden" }}
+      >
         <div
           className={`relative duration-100 transition-all ${
             menu ? "left-0" : "left-[-100%]"
