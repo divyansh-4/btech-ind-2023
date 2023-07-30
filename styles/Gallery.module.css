@@ -1,10 +1,10 @@
 
 .gallerycontainer {
-    height : 34em;
-    width : 45em;
+    height : 38em;
+    width : 50em;
     display : flex ;
     margin : auto ;
-    gap : 4px ;
+    gap : 5px ;
    transition: all 2s ease-in ;
    border-width: 0;
   }
