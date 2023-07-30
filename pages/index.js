@@ -74,7 +74,7 @@ export default function Home() {
         }
         thirdSection={<Gallery />}
         fourthSection={
-          <div className="h-fit overflow-y-hidden relative">
+          <div className="h-screen overflow-y-hidden relative">
             <Parallax
               className="absolute w-full h-full top-0 left-0"
               factor={4}
@@ -87,8 +87,9 @@ export default function Home() {
               />
             </Parallax>
             
-            <TeamCards bg ={'bg-blue5'} teamName="Design Team" teamMembers={["Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras"]} />
-            <TeamFlipcard teamName={<>Design<br/>Team </>} bg={'bg-blue5'}/>
+            {/* <TeamCards bg ={'bg-blue5'} teamName="Design Team" teamMembers={["Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras"]} />
+            
+            <TeamFlipcard teamName={<>Design<br/>Team </>} bg={'bg-blue5'}/> */}
           </div>
         }
       />
