@@ -93,7 +93,7 @@ export default function Body({
               top: `-${ripHeight}px`,
               backgroundImage: "url('/background_filters/section3.png')",
               paddingTop: `${ripHeight / 3}px`,
-              paddingBottom: `${screenWidth < 800 ? ripHeight * 3 : ripHeight/2}px`,
+              paddingBottom: `${screenWidth < 768 ? ripHeight * 5 : ripHeight/2}px`,
             }}
           >
             <div
