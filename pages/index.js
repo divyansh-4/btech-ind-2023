@@ -6,8 +6,11 @@ import Image from "next/image";
 import Parallax from "../components/common/Parallax";
 import KeynoteSec from "../components/KeynoteSec";
 import Gallery from "../components/layout/Gallery";
+// import TeamCards from "../components/TeamCards";
+// import TeamFlipcard from "../components/TeamFlipcard";
 
 export default function Home() {
+  
   return (
     <>
       <SEO />
@@ -70,21 +73,25 @@ export default function Home() {
           </>
         }
         thirdSection={<Gallery />}
-        // fourthSection={
-        //   <div className="h-screen overflow-y-hidden relative">
-        //     <Parallax
-        //       className="absolute w-full h-full top-0 left-0"
-        //       factor={4}
-        //     >
-        //       <div
-        //         className="bg-repeat-y bg-[length:500%] md:bg-[length:100%] w-full h-full bg-top"
-        //         style={{
-        //           backgroundImage: "url('/stickerwall.png')",
-        //         }}
-        //       />
-        //     </Parallax>
-        //   </div>
-        // }
+        fourthSection={
+          <div className="h-screen overflow-y-hidden relative">
+            <Parallax
+              className="absolute w-full h-full top-0 left-0"
+              factor={4}
+            >
+              <div
+                className="bg-repeat-y bg-[length:500%] md:bg-[length:100%] w-full h-full bg-top"
+                style={{
+                  backgroundImage: "url('/stickerwall.png')",
+                }}
+              />
+            </Parallax>
+            
+             {/* <TeamCards bg ={'bg-blue5'} teamName="Design Team" teamMembers={["Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras"]} /> */}
+            
+            {/*<TeamFlipcard teamName={<>Design<br/>Team </>} bg={'bg-blue5'}/> */}
+          </div>
+        }
       />
     </>
   );
