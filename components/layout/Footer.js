@@ -34,7 +34,7 @@ function Footer() {
           <p className={infoListTextStyle}>
             <a
               className={'hover:underline text-red no-underline'}
-              href='mailto:enveave@iiitd.ac.in'
+              href='mailto:info@iiitd.ac.in'
             >
               info@iiitd.ac.in
             </a>
