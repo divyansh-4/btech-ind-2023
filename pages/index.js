@@ -6,8 +6,7 @@ import Image from "next/image";
 import Parallax from "../components/common/Parallax";
 import KeynoteSec from "../components/KeynoteSec";
 import Gallery from "../components/layout/Gallery";
-// import TeamCards from "../components/TeamCards";
-// import TeamFlipcard from "../components/TeamFlipcard";
+import Team from "../components/layout/Team";
 
 export default function Home() {
   
@@ -74,7 +73,7 @@ export default function Home() {
         }
         thirdSection={<Gallery />}
         fourthSection={
-          <div className="h-screen overflow-y-hidden relative">
+          <div className="min-h-auto overflow-y-hidden relative">
             <Parallax
               className="absolute w-full h-full top-0 left-0"
               factor={4}
@@ -86,10 +85,7 @@ export default function Home() {
                 }}
               />
             </Parallax>
-            
-             {/* <TeamCards bg ={'bg-blue5'} teamName="Design Team" teamMembers={["Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras","Paras"]} /> */}
-            
-            {/*<TeamFlipcard teamName={<>Design<br/>Team </>} bg={'bg-blue5'}/> */}
+            <Team />
           </div>
         }
       />

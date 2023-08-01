@@ -94,9 +94,7 @@ export default function Body({
               top: `-${ripHeight}px`,
               backgroundImage: "url('/background_filters/section3.png')",
               paddingTop: `${ripHeight / 3}px`,
-              paddingBottom: `${
-                screenWidth < 768 ? ripHeight * 5 : ripHeight / 2
-              }px`,
+              paddingBottom: `${ripHeight / 2}px`,
             }}
           >
             <div
@@ -123,6 +121,9 @@ export default function Body({
               top: `-${ripHeight}px`,
               backgroundImage: "url('/background_filters/section1.png')",
               paddingTop: `${ripHeight / 3}px`,
+              paddingBottom: `${
+                screenWidth < 768 ? ripHeight * 5 : 0
+              }px`,
             }}
           >
             <div
