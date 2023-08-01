@@ -62,24 +62,24 @@ export default function KeynoteSec() {
           color={'bg-blue5'}
           height={'h-[70%]'}
         />
-        // <KeynoteCards
-        //   name='Amitabh Misra'
-        //   desc={
-        //     <>
-        //       VP Engineering at Adobe,
-        //       <br />
-        //       Experience Cloud
-        //       <br />
-        //       Former CEO,
-        //       <br />
-        //       at Snapdeal
-        //       <br />
-        //     </>
-        //   }
-        //   image='/amitabh.png'
-        //   color={'bg-blue5'}
-        //   height={'h-[70%]'}
-        // />
+        <KeynoteCards
+          name='Amitabh Misra'
+          desc={
+            <>
+              VP Engineering at Adobe,
+              <br />
+              Experience Cloud
+              <br />
+              Former CEO,
+              <br />
+              at Snapdeal
+              <br />
+            </>
+          }
+          image='/amitabh.png'
+          color={'bg-blue5'}
+          height={'h-[70%]'}
+        />
         {Array.from({ length: 3 }).map((keynote) => {
           return (
             <KeynoteCards
