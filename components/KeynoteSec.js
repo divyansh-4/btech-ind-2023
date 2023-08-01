@@ -62,7 +62,7 @@ export default function KeynoteSec() {
           color={'bg-blue5'}
           height={'h-[70%]'}
         />
-        <KeynoteCards
+        {/* <KeynoteCards
           name='Amitabh Misra'
           desc={
             <>
@@ -79,8 +79,8 @@ export default function KeynoteSec() {
           image='/amitabh.png'
           color={'bg-blue5'}
           height={'h-[70%]'}
-        />
-        {Array.from({ length: 3 }).map((keynote) => {
+        /> */}
+        {Array.from({ length: 4 }).map((keynote) => {
           return (
             <KeynoteCards
               key={keynote}
