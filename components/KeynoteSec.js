@@ -33,7 +33,6 @@ export default function KeynoteSec() {
       </div>
       {/* <div className='w-[90%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-20 my-4 sm:my-4 mx-auto'> */}
       <div className='w-[90%] flex flex-row flex-wrap gap-y-10 gap-x-2 sm:gap-y-20 my-4 sm:my-4 mx-auto'>
-
         <KeynoteCards
           name='Pankaj Jalote'
           desc={
@@ -51,7 +50,12 @@ export default function KeynoteSec() {
           name='Dr. Anil Gupta'
           desc={
             <>
-              Padma Shri Awardee<br />Honey Bee Founder<br />Retd. IIM Professor<br />
+              Padma Shri Awardee
+              <br />
+              Honey Bee Founder
+              <br />
+              Retd. IIM Professor
+              <br />
             </>
           }
           image='/drAnil.png'
@@ -62,8 +66,14 @@ export default function KeynoteSec() {
           name='Amitabh Misra'
           desc={
             <>
-              VP Engineering at Adobe,<br />Experience Cloud<br />Former CEO,<br />at Snapdeal<br />
-
+              VP Engineering at Adobe,
+              <br />
+              Experience Cloud
+              <br />
+              Former CEO,
+              <br />
+              at Snapdeal
+              <br />
             </>
           }
           image='/amitabh.png'
@@ -91,9 +101,6 @@ export default function KeynoteSec() {
             />
           );
         })}
-
-
-
       </div>
       <div className='flex flex-col justify-center items-center w-full my-8 sm:my-16 h-fit'>
         <div className='uppercase bg-amber-400 rounded-[40px] text-center sm:rounded-[10rem] border-2 border-black w-3/5 sm:w-[55%] lg:w-[60%] p-2 sm:p-4 my-14'>
@@ -108,11 +115,18 @@ export default function KeynoteSec() {
         </div>
       </div>
       <div className='w-[90%] flex flex-row flex-wrap gap-y-10 gap-x-2 sm:gap-y-20 my-4 sm:my-4 mx-auto'>
-      <KeynoteCards
+        <KeynoteCards
           name='Kullu'
           desc={
             <>
-              <br />Comedian<br />Aditya Kulshreshtha<br />aka<br />Kullu
+              <br />
+              Comedian
+              <br />
+              Aditya Kulshreshtha
+              <br />
+              aka
+              <br />
+              Kullu
             </>
           }
           image='/kullu.png'
@@ -123,7 +137,9 @@ export default function KeynoteSec() {
           name='Ayushman Pandita'
           desc={
             <>
-              <br />Growth Rocket Founder<br /> Content Creator
+              <br />
+              Growth Rocket Founder
+              <br /> Content Creator
             </>
           }
           image='/aPandita.png'
@@ -131,10 +147,16 @@ export default function KeynoteSec() {
           height={'h-[65%]'}
         />
         <KeynoteCards
-          name='Shivansh garg'
+          name='Shivansh Garg'
           desc={
             <>
-              <br />Entrepreneur<br />Angel investor<br />Content Creator<br />
+              <br />
+              Entrepreneur
+              <br />
+              Angel investor
+              <br />
+              Content Creator
+              <br />
             </>
           }
           image='/sGarg.png'
@@ -145,7 +167,10 @@ export default function KeynoteSec() {
           name='Kanav Bhagat'
           desc={
             <>
-              Motorsports Commentator<br />Content Creator<br />
+              Motorsports Commentator
+              <br />
+              Content Creator
+              <br />
             </>
           }
           image='/kbhagat.png'
