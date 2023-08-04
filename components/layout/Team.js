@@ -1,9 +1,9 @@
-import Card from '../TeamCards';
-import FlipCard from '../TeamFlipcard';
 import React, { useState } from 'react';
 import Carousel from "react-multi-carousel";
 import ReactCardFlip from 'react-card-flip';
 import "react-multi-carousel/lib/styles.css";
+import Card from './TeamCards';
+import FlipCard from './TeamFlipcard';
 
 const Team = () => {
     const [isFlipped, setIsFlipped] = useState(false);
