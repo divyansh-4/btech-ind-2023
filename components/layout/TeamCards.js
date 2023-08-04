@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TeamCards = ({ bg, teamName, teamMembers, memberImages, customImageStyle }) => {
+function TeamCards({ bg, teamName, teamMembers, memberImages, customImageStyle }) {
     return (
       <div
         className="w-[70vh] h-[90vh] bg-neutral-800 rounded-[30px] shadow relative"
