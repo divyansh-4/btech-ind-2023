@@ -1,4 +1,4 @@
-export default function TeamCards({ bg, teamName, teamMembers }) {
+export default function TeamCards({ bg, teamName, teamMembers, memberImages, customImageStyle }) {
   return (
       <div
         className="w-[70vh] h-[90vh] bg-neutral-800  rounded-[30px] shadow  relative "
@@ -22,17 +22,21 @@ export default function TeamCards({ bg, teamName, teamMembers }) {
               backgroundImage: "url('/background_filters/teamCardBg.png') ",
             }}
           >
-            {teamMembers.map((member, index) => { 
-              return (
-                <div className="bg-zinc-300 rounded-3xl w-[25%] h-[20%]">
-                  <img src={`/members/${member}.png`}  key = {index} alt="" sizes=""   className=""/>
-                </div>
-              );
-            })}
+            {teamMembers.map((member, index) => (
+              <div className={`${customImageStyle}`}>
+              {memberImages[index] && (
+                <img
+                  src={memberImages[index]}
+                  alt={member}
+                  className='w-[100%] h-[100%] rounded-full mr-2'
+                />
+              )}
+              </div>
+          ))}
           </div>
 
           <div
-            className={`Names text-center w-full [h-30%] ${bg} rounded-xl flex flex-wrap mt-2 text-black text-base lg:text-lg sm:text-xs font-bold py-2 px-4 gap-x-1`}
+            className={`Names justify-center text-center w-full [h-30%] ${bg} rounded-xl flex flex-wrap mt-2 text-black text-base lg:text-lg sm:text-xs font-bold py-2 px-4 gap-x-1`}
             style={{
               backgroundImage: "url('/background_filters/teamCardBg.png') ",
             }}
