@@ -8,7 +8,7 @@ const TeamCards = ({ bg, teamName, teamMembers, memberImages, customImageStyle }
       >
         <div className=" p-8">
           <div
-            className={`Team w-full ${bg} text-center text-black text-3xl sm:text-xl md:text-2xl lg:text-3xl font-bold rounded-xl p-2 uppercase `}
+            className={` w-full ${bg} text-center text-black text-3xl sm:text-xl md:text-2xl lg:text-3xl font-bold rounded-xl p-2 uppercase `}
             style={{
               backgroundImage: "url('/background_filters/teamCardBg.png') ",
             }}
@@ -36,7 +36,7 @@ const TeamCards = ({ bg, teamName, teamMembers, memberImages, customImageStyle }
           </div>
 
           <div
-            className={`Names justify-center text-center w-full [h-30%] ${bg} rounded-xl flex flex-wrap mt-2 text-black text-base lg:text-lg sm:text-xs font-bold py-2 px-4 gap-x-1`}
+            className={` justify-center text-center w-full [h-30%] ${bg} rounded-xl flex flex-wrap mt-2 text-black text-base lg:text-lg sm:text-xs font-bold py-2 px-4 gap-x-1`}
             style={{
               backgroundImage: "url('/background_filters/teamCardBg.png') ",
             }}
