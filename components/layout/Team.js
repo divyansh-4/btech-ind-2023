@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Carousel from "react-multi-carousel";
 import ReactCardFlip from 'react-card-flip';
 import "react-multi-carousel/lib/styles.css";
-import Card from './TeamCards';
+import TeamCards from './TeamCards';
 import FlipCard from './TeamFlipcard';
 
 const Team = () => {
@@ -210,7 +210,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick}>
-                <Card 
+                <TeamCards 
                     bg={'bg-[#277FE6]'} 
                     teamName="Design Team" 
                     teamMembers={["Abhinav Sharma", "Ananya Sachdev", "Omansh Arora", "Sarthak Gupta", "Virat"]}
@@ -227,7 +227,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick1}>
-                <Card 
+                <TeamCards 
                     bg={'bg-[#39B66D]'} 
                     teamName="Web Dev Team" 
                     teamMembers={["Aadya\n", "Ayush Gupta\n", "Sumit Kumar"]} 
@@ -245,7 +245,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick2}>
-                <Card 
+                <TeamCards 
                     bg={'bg-[#E44F44]'} 
                     teamName="App Dev Team" 
                     teamMembers={["Aayush", "Antonio Pedro", "Shobhit Verma"]} 
@@ -263,7 +263,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick3}>
-                <Card 
+                <TeamCards 
                     bg={'bg-[#4D2885]'} 
                     teamName="Operation Team" 
                     teamMembers={["Anant Kaushal", "Ansh Varshney", "Harshvardhan Chourasia", "Neelu", "Rahul Goel", "Ritviek Padda", "Tushar Kumar", "Vashu", "Vipul Mishra"]} 
@@ -280,7 +280,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick4}>
-                <Card bg={'bg-[#277FE6]'} teamName="Content Team" teamMembers={["Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut"]} />,
+                <TeamCards bg={'bg-[#277FE6]'} teamName="Content Team" teamMembers={["Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut"]} />,
                 </button>
             </div>
         </ReactCardFlip> */}
@@ -292,7 +292,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick5}>
-                <Card 
+                <TeamCards 
                     bg={'bg-[#39B66D]'} 
                     teamName="Core Team" 
                     teamMembers={["Anand Vimal", "Krishna Ayyagari", "Meet Popat", "Saumya"]} 
@@ -310,7 +310,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick6}>
-                <Card bg={'bg-[#E44F44]'} teamName="Events Team" teamMembers={["Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut"]} />,
+                <TeamCards bg={'bg-[#E44F44]'} teamName="Events Team" teamMembers={["Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut", "Donut"]} />,
                 </button>
             </div>
         </ReactCardFlip> */}
@@ -322,7 +322,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick7}>
-                <Card 
+                <TeamCards 
                     bg={'bg-[#4D2885]'} 
                     teamName="Mentors" 
                     teamMembers={["Gagan", "Shagun", "Aayush", "Aditi Sharma", "Aryan Jain", "Vikrant", "Mohmmad Ayaan", "Dhruv Garg", "Ekansh"]} 
@@ -340,7 +340,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick7}>
-                <Card 
+                <TeamCards 
                     bg={'bg-[#4D2885]'} 
                     teamName="Mentors" 
                     teamMembers={["Bhavy Chawla", "Nishant Singh", "Kirti Jain", "Kumar Saksham", "Manasva Mittal", "Mehul Arora", "Naman Birla", "Piyush Kumar", "Pooja"]} 
@@ -358,7 +358,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick7}>
-                <Card 
+                <TeamCards 
                     bg={'bg-[#4D2885]'} 
                     teamName="Mentors" 
                     teamMembers={["Rahul", "Raj Gupta", "Ritika Thakur", "Riya Gupta", "Riya Sachdeva", "Rohan Indora", "Sarthak Gupta", "Satvik Fotedar", "Satyam Arora"]} 
@@ -376,7 +376,7 @@ const Team = () => {
             </div>
             <div>
                 <button onClick={handleClick7}>
-                <Card 
+                <TeamCards 
                     bg={'bg-[#4D2885]'} 
                     teamName="Mentors" 
                     teamMembers={["Siddhant Bali", "Vijval Ekbote", "Vimansh Mahajan", "Vishesh Jain", "Vishnu Vardhan"]} 
