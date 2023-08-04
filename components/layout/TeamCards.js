@@ -1,5 +1,5 @@
-export default function TeamCards({ bg, teamName, teamMembers, memberImages, customImageStyle }) {
-  return (
+const TeamCards = ({ bg, teamName, teamMembers, memberImages, customImageStyle }) => {
+    return (
       <div
         className="w-[70vh] h-[90vh] bg-neutral-800  rounded-[30px] shadow  relative "
         style={{
@@ -49,3 +49,5 @@ export default function TeamCards({ bg, teamName, teamMembers, memberImages, cus
       </div>    
   );
 }
+
+export default TeamCards;

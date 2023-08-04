@@ -1,5 +1,5 @@
-export default function TeamFlipcard({teamName, bg}) {
-  return (
+const TeamFlipcard = ({teamName, bg}) => {
+    return (
     <div className="relative m-8">
         <div
           className="w-[50vh] h-[60vh] bg-neutral-800  rounded-[30px] shadow  bg-cover relative z-20"
@@ -21,3 +21,5 @@ export default function TeamFlipcard({teamName, bg}) {
     </div>
   )
 }
+
+export default TeamFlipcard;
