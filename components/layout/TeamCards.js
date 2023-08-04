@@ -17,7 +17,7 @@ function TeamCards({ bg, teamName, teamMembers, memberImages, customImageStyle }
           >
             {teamName}
           </div>
-          <div
+          {/* <div
             className={`w-full h-[50vh] images flex flex-wrap justify-evenly p-4 ${bg} gap-y-4 gap-x-3 mx-auto mt-2 rounded-xl`}
             style={{
               backgroundImage: "url('/background_filters/teamCardBg.png')",
@@ -34,7 +34,7 @@ function TeamCards({ bg, teamName, teamMembers, memberImages, customImageStyle }
               )}
               </div>
           ))}
-          </div>
+          </div> */}
 
           <div
             className={`Names justify-center text-center w-full [h-30%] ${bg} rounded-xl flex flex-wrap mt-2 text-black text-base lg:text-lg sm:text-xs font-bold py-2 px-4 gap-x-1`}
@@ -42,9 +42,9 @@ function TeamCards({ bg, teamName, teamMembers, memberImages, customImageStyle }
               backgroundImage: "url('/background_filters/teamCardBg.png')",
             }}
           >
-            {teamMembers.map((member) => {
-              return <div>{member}|</div>;
-            })}
+            {teamMembers.map((member) => (
+              <div>{member}|</div>
+            ))}
           </div>
         </div>
       </div>    
