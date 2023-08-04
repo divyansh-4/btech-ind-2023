@@ -1,3 +1,5 @@
+import React from 'react';
+
 const TeamCards = ({ bg, teamName, teamMembers, memberImages, customImageStyle }) => {
     return (
       <div
@@ -34,7 +36,7 @@ const TeamCards = ({ bg, teamName, teamMembers, memberImages, customImageStyle }
           ))}
           </div>
 
-          {/* <div
+          <div
             className={`Names justify-center text-center w-full [h-30%] ${bg} rounded-xl flex flex-wrap mt-2 text-black text-base lg:text-lg sm:text-xs font-bold py-2 px-4 gap-x-1`}
             style={{
               backgroundImage: "url('/background_filters/teamCardBg.png')",
@@ -43,7 +45,7 @@ const TeamCards = ({ bg, teamName, teamMembers, memberImages, customImageStyle }
             {teamMembers.map((member) => {
               return <div>{member}|</div>;
             })}
-          </div> */}
+          </div>
         </div>
       </div>    
   );
