@@ -6,7 +6,7 @@ const TeamCards = ({ bg, teamName, teamMembers, memberImages, customImageStyle }
           backgroundImage: "url('/background_filters/teamCardBg.png') ",
         }}
       >
-        {/* <div className="p-8">
+        <div className="p-8">
           <div
             className={`Team w-full ${bg} text-center text-black text-3xl sm:text-xl md:text-2xl lg:text-3xl font-bold rounded-xl p-2 uppercase`}
             style={{
@@ -15,7 +15,7 @@ const TeamCards = ({ bg, teamName, teamMembers, memberImages, customImageStyle }
           >
             {teamName}
           </div>
-          <div
+          {/* <div
             className={`w-full h-[50vh] images flex flex-wrap justify-evenly p-4 ${bg} gap-y-4 gap-x-3 mx-auto mt-2 rounded-xl`}
             style={{
               backgroundImage: "url('/background_filters/teamCardBg.png')",
@@ -43,8 +43,8 @@ const TeamCards = ({ bg, teamName, teamMembers, memberImages, customImageStyle }
             {teamMembers.map((member) => {
               return <div>{member}|</div>;
             })}
-          </div>
-        </div> */}
+          </div> */}
+        </div>
       </div>    
   );
 }
