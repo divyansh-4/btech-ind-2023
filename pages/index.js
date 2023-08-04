@@ -6,7 +6,7 @@ import Image from "next/image";
 import Parallax from "../components/common/Parallax";
 import KeynoteSec from "../components/KeynoteSec";
 import Gallery from "../components/layout/Gallery";
-import Team from "../components/Team";
+import Team from "../components/layout/Team";
 
 export default function Home() {
   
